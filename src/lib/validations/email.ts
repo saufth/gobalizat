@@ -17,9 +17,6 @@ const nameLimitsErrorMessage = limitsErrorMessage(nameLimits)
 const phoneLimits: Limits = { min: 10, max: 10 }
 const phoneLimitsErrorMessage = limitsErrorMessage(phoneLimits)
 
-const countryLimits: Limits = { min: 4, max: 31 }
-const countryLimitsErrorMessage = limitsErrorMessage(countryLimits)
-
 const subjectLimits: Limits = { min: 12, max: 512 }
 const subjectLimitsErrorMessage = limitsErrorMessage(subjectLimits)
 
@@ -41,9 +38,6 @@ export const contactEmailSchema = z.object({
     .regex(phoneRegExp, { message: 'Número de teléfono inválido' })
     .min(phoneLimits.min, { message: phoneLimitsErrorMessage })
     .max(phoneLimits.max, { message: phoneLimitsErrorMessage }),
-  country: z.string()
-    .min(countryLimits.min, { message: countryLimitsErrorMessage })
-    .max(countryLimits.max, { message: countryLimitsErrorMessage }),
   subject: z.string()
     .min(subjectLimits.min, { message: subjectLimitsErrorMessage })
     .max(subjectLimits.max, { message: subjectLimitsErrorMessage })
