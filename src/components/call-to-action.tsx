@@ -1,5 +1,5 @@
 import { type ComponentProps } from 'react'
-import { Button } from '@/components/ui/button'
+import { Button, type ButtonVariantProps } from '@/components/ui/button'
 import NextLink from '@/components/ui/next-link'
 import { cn } from '@/lib/utils'
 import { siteNav } from '@/config/site'
@@ -8,15 +8,26 @@ const routes = {
   contact: siteNav.find((navItem) => navItem.title === 'Contáctanos')
 }
 
-interface CallToActionProps extends Pick<ComponentProps<typeof NextLink>, 'className' | 'onClick'> {
+interface CallToActionProps
+  extends Pick<ComponentProps<typeof NextLink>, 'className' | 'onClick'>,
+    ButtonVariantProps {
   to: keyof typeof routes
 }
 
-export const CallToAction = ({ className, onClick, to }: CallToActionProps) => {
+export const CallToAction = (
+  {
+    className,
+    onClick,
+    to,
+    size = 'lg',
+    variant
+  }: CallToActionProps
+) => {
   return (
     <Button
       asChild
-      size='lg'
+      size={size}
+      variant={variant}
       className={cn(
         'hidden sm:inline-flex lg:font-medium text-sm lg:text-lg tracking-wider',
         className

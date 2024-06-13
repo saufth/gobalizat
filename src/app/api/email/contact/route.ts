@@ -34,7 +34,7 @@ export async function POST (req: Request) {
       html: `
         <p><b>Nombre:</b> ${input.name}</p>
         <p><b>Correo electrónico:</b> ${input.email}</p>
-        <p><b>Whatsapp:</b> ${input.phone}</p>
+        <p><b>Teléfono:</b> ${input.phone}</p>
         <p><b>Asunto:</b> ${input.subject}</p>
       `
     })

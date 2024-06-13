@@ -34,7 +34,7 @@ export function ModeToggle () {
         viewBox='0 0 15 15'
         fill='currentColor'
         aria-hidden='true'
-        className='h-auto w-6 scale-0'
+        className='h-auto w-6 scale-0 fill-white'
         variants={modeVariants}
         initial='dark'
         animate={theme}

@@ -7,6 +7,7 @@ import Menu from '@/components/layouts/menu'
 import NextLink from '@/components/ui/next-link'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { siteConfig } from '@/config/site'
+import { cn } from '@/lib/utils'
 
 export default function SiteHeader () {
   const { scrollYProgress } = useScroll()
@@ -42,21 +43,25 @@ export default function SiteHeader () {
         }}
         animate={{
           y: visible || isMenuOpen ? 0 : -100,
+          backgroundColor: isOnTop || isMenuOpen ? 'oklch(var(--background)/0)' : 'oklch(var(--background)/0.8)',
           borderColor: isOnTop || isMenuOpen ? 'transparent' : 'oklch(var(--border))'
         }}
         transition={{
           duration: 0.5
         }}
-        className='w-full fixed top-0 left-0 z-40 bg-background/80 backdrop-saturate-150 backdrop-blur-lg border-b'
+        className={cn(
+          'w-full fixed top-0 left-0 z-40 backdrop-filter backdrop-saturate-150 backdrop-blur-lg border-b',
+          (isOnTop || isMenuOpen) && 'backdrop-filter-none'
+        )}
       >
         <nav aria-label={`${siteConfig.name} directory`}>
           <div className='container relative z-10'>
-            <div
-              className='w-full h-[74px] lg:h-24 flex justify-between items-center'
-            >
+            <div className='w-full h-[74px] lg:h-24 flex justify-between items-center'>
               <div className='h-12 lg:h-16'>
                 <NextLink href='/' onClick={closeMenu}>
-                  <Icons.Logotype className='w-auto h-full' />
+                  <Icons.Logotype
+                    className={cn('w-auto h-full', (isOnTop && !isMenuOpen) && '[&_.logo-primary-fill]:fill-white')}
+                  />
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </NextLink>
               </div>
@@ -65,12 +70,12 @@ export default function SiteHeader () {
                 <button className='w-9 h-2.5 relative' onClick={toggleMenu}>
                   <motion.span
                     initial={{
-                      backgroundColor: 'oklch(var(--foreground))',
+                      backgroundColor: 'oklch(100% 0 0)',
                       top: 0,
                       left: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(var(--foreground))',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(100% 0 0)',
                       top: isMenuOpen ? 3.8 : 0,
                       left: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? 45 : 0
@@ -83,12 +88,12 @@ export default function SiteHeader () {
                   />
                   <motion.span
                     initial={{
-                      backgroundColor: 'oklch(var(--foreground))',
+                      backgroundColor: 'oklch(100% 0 0)',
                       bottom: 0,
                       right: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(var(--foreground))',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(100% 0 0)',
                       bottom: isMenuOpen ? 3.8 : 0,
                       right: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? -45 : 0

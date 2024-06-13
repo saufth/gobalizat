@@ -24,317 +24,317 @@ export const Icons = {
             >
               <path
                 d='M 0,0 -0.286,0.066 8.398,37.792 8.683,37.726 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,224.41173,175.96787)'
               />
               <path
                 d='M 0,0 -20.17,0.066 -20.168,0.358 0.001,0.293 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.34573,126.82907)'
               />
               <path
                 d='m 0,0 -0.279,-0.094 -9.289,27.091 0.277,0.093 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.53107,126.5712)'
               />
               <path
                 d='m 0,0 -0.272,0.109 10.879,27.025 0.271,-0.109 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,208.63507,126.61867)'
               />
               <path
                 d='M 0,0 -0.264,0.127 9.6,20.469 9.864,20.341 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,194.7448,154.03187)'
               />
               <path
                 d='m 0,0 -22.213,15.864 0.17,0.239 L 0.169,0.239 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,224.0724,175.25813)'
               />
               <path
                 d='m 0,0 -12.172,24.753 0.263,0.13 L 0.263,0.13 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,210.6232,187.03773)'
               />
               <path
                 d='m 0,0 -14.326,17.195 0.225,0.187 L 0.225,0.188 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,254.29693,149.68533)'
               />
               <path
                 d='M 0,0 -0.244,0.161 19.75,30.244 19.994,30.083 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.5084,126.7408)'
               />
               <path
                 d='m 0,0 -0.276,-0.101 -4.523,13.734 0.276,0.101 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,299.86667,101.6064)'
               />
               <path
                 d='m 0,0 -23.735,-2.37 -0.03,0.292 23.736,2.369 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,293.67147,83.557467)'
               />
               <path
                 d='m 0,0 -29.257,-3.613 -0.037,0.291 29.258,3.613 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,262.0284,86.716533)'
               />
               <path
                 d='m 0,0 -25.966,-9.49 -0.099,0.275 25.965,9.49 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,257.68133,78.8688)'
               />
               <path
                 d='M 0,0 -27.028,3.509 -26.99,3.799 0.038,0.29 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,293.6268,83.556533)'
               />
               <path
                 d='M 0,0 -0.287,0.055 4.566,25.107 4.853,25.051 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,194.75987,153.98307)'
               />
               <path
                 d='m 0,0 -37.163,-13.136 -0.098,0.275 37.163,13.137 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,258.52227,108.20293)'
               />
               <path
                 d='m 0,0 c 0.498,-1.303 -0.155,-2.763 -1.459,-3.26 -1.302,-0.498 -2.763,0.155 -3.26,1.459 -0.498,1.303 0.156,2.763 1.459,3.261 C -1.957,1.957 -0.497,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,198.8188,152.72973)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.155,-2.765 -1.459,-3.262 -1.303,-0.497 -2.762,0.157 -3.261,1.46 -0.497,1.303 0.156,2.763 1.46,3.261 C -1.956,1.957 -0.497,1.303 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,211.73093,126.03627)'
               />
               <path
                 d='m 0,0 c 0.499,-1.304 -0.155,-2.763 -1.459,-3.26 -1.303,-0.497 -2.762,0.155 -3.26,1.459 -0.498,1.303 0.156,2.763 1.46,3.26 C -1.956,1.957 -0.497,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,226.104,89.311867)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.155,-2.764 -1.459,-3.262 -1.303,-0.497 -2.762,0.157 -3.261,1.461 -0.497,1.302 0.156,2.762 1.46,3.261 C -1.956,1.957 -0.497,1.303 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,238.4916,125.43227)'
               />
               <path
                 d='m 0,0 c 0.496,-1.302 -0.156,-2.763 -1.46,-3.26 -1.303,-0.498 -2.763,0.156 -3.26,1.459 -0.499,1.303 0.155,2.764 1.459,3.262 C -1.958,1.958 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,228.86547,173.5652)'
               />
               <path
                 d='m 0,0 c 0.497,-1.304 -0.156,-2.763 -1.46,-3.26 -1.303,-0.498 -2.763,0.154 -3.26,1.458 -0.498,1.305 0.156,2.764 1.459,3.262 C -1.957,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,257.14107,149.3724)'
               />
               <path
                 d='m 0,0 c 0.498,-1.303 -0.156,-2.763 -1.46,-3.26 -1.303,-0.497 -2.762,0.156 -3.26,1.459 -0.498,1.304 0.156,2.763 1.459,3.261 C -1.957,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,262.49107,107.1992)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.156,-2.763 -1.459,-3.261 -1.303,-0.497 -2.764,0.156 -3.261,1.459 -0.498,1.304 0.156,2.764 1.459,3.261 C -1.958,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,265.32147,86.624267)'
               />
             </g>
             <path
               d='m 196.25415,-338.44393 -57.00388,19.42963 -0.14877,-0.43835 57.00391,-19.43121 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 195.84335,-306.74538 h 0.46208 l 0.10598,-31.91693 -0.46367,-0.001 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 138.74372,-319.85681 -0.37822,-0.26903 25.10437,-35.1515 0.37664,0.2706 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 126.20023,-337.61154 -0.19307,-0.41777 37.55529,-17.32177 0.19306,0.42094 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 137.37883,-319.82406 -11.47135,-17.87088 0.39087,-0.25003 11.47135,17.87088 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 98.324628,-302.73001 -0.170907,-0.43044 40.933859,-16.28841 0.1725,0.43044 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 98.421322,-302.79948 -0.362387,-0.29117 27.864205,-34.87299 0.36398,0.28801 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 96.910051,-259.17288 -0.463666,-0.0158 1.56032,-43.76492 0.463666,0.0174 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 130.04628,-256.74599 -33.382296,-2.20439 0.03006,-0.46209 33.383896,2.2044 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 129.87094,-256.84584 -31.821981,-45.96613 0.379793,-0.26586 31.825148,45.9693 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 128.99029,-255.1181 -0.45418,-0.0744 10.4111,-64.07755 0.45576,0.0744 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 168.68856,-283.92388 -29.69038,-35.15941 0.35448,-0.29909 29.69038,35.15784 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 130.20278,-256.79425 -0.28327,-0.36713 36.69284,-28.28357 0.28169,0.36713 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 153.62372,-239.25316 -0.44151,-0.13926 14.25968,-45.28884 0.44309,0.13768 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 141.4461,-205.16697 -0.451,0.0982 -11.15962,-51.85927 0.45101,-0.0982 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 141.11031,-204.91616 -30.78388,-17.14136 0.22313,-0.40669 30.78387,17.14452 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 110.65606,-222.34157 -0.43518,0.16141 -13.758032,-36.91913 0.433598,-0.16299 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 110.64039,-222.14978 -0.4067,-0.22313 18.75392,-34.384 0.40985,0.22313 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 208.61993,-344.86577 -45.01189,-10.05029 0.10123,-0.45258 45.0119,10.05029 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 129.89404,-257.76273 -22.30181,-14.06819 0.24686,-0.39246 22.3034,14.0682 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 107.31577,-272.85115 -0.44309,0.13135 -8.855526,-30.1588 0.443093,-0.13293 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='M 0,0 C -1.304,-0.497 -2.764,0.155 -3.261,1.459 -3.758,2.762 -3.106,4.222 -1.802,4.721 -0.499,5.217 0.961,4.563 1.459,3.261 1.955,1.957 1.302,0.498 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,210.10983,-340.96734)'
             />
             <path
               d='M 0,0 C -1.303,-0.497 -2.763,0.157 -3.261,1.459 -3.757,2.763 -3.104,4.222 -1.801,4.72 -0.498,5.217 0.963,4.564 1.461,3.261 1.957,1.958 1.304,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,197.49957,-303.01106)'
             />
             <path
               d='M 0,0 C -1.304,-0.497 -2.764,0.157 -3.261,1.459 -3.758,2.763 -3.105,4.222 -1.802,4.72 -0.499,5.218 0.962,4.565 1.459,3.261 1.956,1.958 1.302,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,140.37667,-314.43763)'
             />
             <path
               d='m 0,0 c -1.303,-0.497 -2.763,0.157 -3.26,1.459 -0.498,1.303 0.155,2.763 1.459,3.26 C -0.498,5.217 0.962,4.564 1.46,3.26 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,108.51892,-269.05132)'
             />
             <path
               d='M 0,0 C -1.303,-0.498 -2.763,0.155 -3.261,1.459 -3.758,2.763 -3.104,4.222 -1.801,4.72 -0.498,5.217 0.962,4.564 1.461,3.26 1.957,1.956 1.304,0.498 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,131.48665,-253.24335)'
             />
             <path
               d='M 0,0 C -1.303,-0.498 -2.764,0.156 -3.261,1.459 -3.758,2.763 -3.105,4.223 -1.801,4.72 -0.498,5.218 0.962,4.565 1.459,3.261 1.956,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,169.08797,-280.87762)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,155.22092,-235.23605)'
             />
             <path
               d='M 0,0 C -1.304,-0.498 -2.764,0.155 -3.26,1.459 -3.758,2.763 -3.105,4.223 -1.802,4.72 -0.498,5.218 0.961,4.564 1.459,3.261 1.957,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,111.8638,-218.52607)'
             />
             <path
               d='M 0,0 C -1.302,-0.497 -2.763,0.155 -3.26,1.458 -3.758,2.762 -3.104,4.222 -1.801,4.721 -0.498,5.218 0.962,4.563 1.46,3.26 1.956,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,98.925973,-255.74254)'
             />
             <path
               d='m 0,0 c -1.303,-0.497 -2.763,0.155 -3.261,1.459 -0.497,1.304 0.157,2.763 1.46,3.262 C -0.498,5.217 0.962,4.564 1.459,3.26 1.957,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,99.756131,-297.57889)'
             />
             <path
               d='m 0,0 c -1.303,-0.498 -2.764,0.157 -3.261,1.459 -0.498,1.304 0.157,2.763 1.46,3.26 C -0.499,5.217 0.961,4.564 1.459,3.261 1.956,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,127.52983,-334.08563)'
             />
             <path
               d='M 0,0 H 9.2 V -5.981 C 8.62,-6.461 7.789,-6.897 6.725,-7.28 5.437,-7.744 3.632,-7.979 1.362,-7.979 c -2.884,0 -5.177,0.839 -7.008,2.567 -1.815,1.711 -2.697,3.839 -2.697,6.503 v 6.834 c 0,2.644 0.834,4.76 2.549,6.465 1.717,1.708 3.94,2.538 6.794,2.538 2.682,0 4.755,-0.596 6.161,-1.771 C 8.533,14.011 9.2,12.622 9.2,10.912 v -1 h 6.94 l 0.38,0.927 0.004,0.184 c 0.082,3.347 -1.337,6.134 -4.221,8.284 C 9.518,21.383 5.715,22.436 1,22.436 c -4.888,0 -8.952,-1.352 -12.079,-4.019 -3.175,-2.706 -4.784,-6.252 -4.784,-10.537 V 1.091 c 0,-4.293 1.671,-7.843 4.966,-10.549 3.235,-2.659 7.36,-4.007 12.259,-4.007 3.93,0 7.191,0.545 9.693,1.62 2.567,1.104 4.341,2.304 5.422,3.671 l 0.215,0.273 V 5.485 H 0 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,198.87965,-257.31979)'
             />
             <path
               d='m 237.528,898.097 h 7.492 V 935.4 h -7.492 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,-139.23738,1184.4516)'
             />
             <path
               d='m 0,0 c 0,2.354 0.591,4.247 1.807,5.784 1.157,1.466 2.846,2.178 5.167,2.178 2.34,0 4.05,-0.714 5.227,-2.183 C 13.432,4.243 14.03,2.353 14.03,0 v -0.497 c 0,-2.35 -0.61,-4.302 -1.814,-5.802 -1.168,-1.453 -2.864,-2.16 -5.187,-2.16 -2.359,0 -4.068,0.706 -5.225,2.158 C 0.606,-4.801 0,-2.849 0,-0.497 Z M 6.974,13.47 C 2.579,13.47 -0.966,12.19 -3.564,9.668 -6.171,7.138 -7.492,3.885 -7.492,0 v -0.497 c 0,-3.902 1.327,-7.156 3.945,-9.671 2.607,-2.506 6.165,-3.776 10.576,-3.776 4.411,0 7.965,1.266 10.563,3.764 2.608,2.508 3.93,5.766 3.93,9.683 V 0 c 0,3.9 -1.327,7.158 -3.943,9.682 -2.608,2.513 -6.177,3.788 -10.605,3.788'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,268.5302,-258.0786)'
             />
             <path
               d='m 0,0 v -0.475 c 0,-2.204 -0.559,-3.981 -1.66,-5.283 -1.074,-1.269 -2.712,-1.887 -5.007,-1.887 -1.557,0 -2.843,0.296 -3.824,0.879 -0.92,0.545 -1.688,1.301 -2.285,2.248 V 5.526 c 0.581,0.875 1.344,1.591 2.274,2.128 1.003,0.579 2.274,0.873 3.779,0.873 2.281,0 3.916,-0.733 5,-2.242 C -0.579,4.694 0,2.579 0,0 m -5.329,14.148 c -1.998,0 -3.781,-0.314 -5.298,-0.934 -0.775,-0.317 -1.494,-0.709 -2.149,-1.174 v 12.473 h -7.493 V -12.79 h 5.977 l 0.625,2.328 c 0.812,-0.723 1.737,-1.311 2.77,-1.759 1.597,-0.693 3.49,-1.045 5.624,-1.045 3.925,0 7.071,1.196 9.347,3.553 2.269,2.348 3.418,5.456 3.418,9.238 V 0 c 0,4.166 -1.133,7.591 -3.365,10.181 -2.271,2.632 -5.451,3.967 -9.456,3.967'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,342.12918,-257.00456)'
             />
             <path
               d='M 0,0 C 1.154,0.786 2.752,1.185 4.749,1.185 H 9.91 V -1.566 C 9.484,-2.354 8.616,-3.093 7.327,-3.763 5.879,-4.514 4.224,-4.895 2.407,-4.895 c -1.405,0 -2.45,0.251 -3.104,0.748 -0.586,0.444 -0.859,1.01 -0.859,1.783 0,0.878 0.509,1.65 1.556,2.364 m 17.561,-6.619 c -0.106,0.766 -0.159,1.574 -0.159,2.399 V 7.57 c 0,2.993 -1.198,5.324 -3.562,6.927 -2.241,1.519 -5.207,2.288 -8.813,2.288 -3.644,0 -6.679,-0.804 -9.021,-2.389 -2.491,-1.687 -3.675,-3.634 -3.518,-5.791 l 0.385,-1.068 6.882,0.061 v 0.991 c 0,0.242 0,0.978 1.195,1.767 0.926,0.612 2.195,0.921 3.771,0.921 1.733,0 3.065,-0.351 3.958,-1.045 C 9.508,9.588 9.91,8.731 9.91,7.615 V 6.194 H 4.943 c -4.152,0 -7.511,-0.71 -9.984,-2.11 C -7.7,2.58 -9.048,0.44 -9.048,-2.273 c 0,-2.604 0.958,-4.684 2.846,-6.181 1.818,-1.443 4.442,-2.175 7.801,-2.175 2.038,0 3.97,0.434 5.744,1.287 1.046,0.504 1.984,1.088 2.805,1.747 0.104,-0.54 0.24,-1.145 0.406,-1.803 l 0.19,-0.755 h 7.888 l -0.515,1.355 c -0.268,0.708 -0.456,1.441 -0.556,2.179'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,374.0939,-252.83205)'
             />
             <path
               d='m 348.207,898.097 h 7.492 V 935.4 h -7.492 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,-139.23738,1184.4516)'
             />
             <path
               d='m 362.592,898.097 h 7.492 v 26.485 h -7.492 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,-139.23738,1184.4516)'
             />
             <path
               d='m 362.592,928.851 h 7.492 v 6.549 h -7.492 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,-139.23738,1184.4516)'
             />
             <path
               d='m 0,0 v 4.421 h -24.833 v -5.53 h 14.845 l -15.039,-16.444 v -4.511 H 0.948 v 5.485 h -16.151 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,494.05749,-271.68107)'
             />
             <path
               d='M 0,0 C 1.154,0.786 2.752,1.185 4.749,1.185 H 9.91 V -1.566 C 9.484,-2.354 8.616,-3.093 7.327,-3.763 5.879,-4.514 4.224,-4.895 2.407,-4.895 c -1.405,0 -2.45,0.251 -3.104,0.748 -0.586,0.444 -0.859,1.01 -0.859,1.783 0,0.878 0.509,1.65 1.556,2.364 m 17.561,-6.619 c -0.106,0.766 -0.159,1.574 -0.159,2.399 V 7.57 c 0,2.993 -1.198,5.324 -3.562,6.927 -2.241,1.519 -5.207,2.288 -8.813,2.288 -3.644,0 -6.679,-0.804 -9.021,-2.389 -2.491,-1.687 -3.675,-3.634 -3.518,-5.791 l 0.385,-1.068 6.882,0.061 v 0.991 c 0,0.242 0,0.978 1.195,1.767 0.926,0.612 2.195,0.921 3.771,0.921 1.733,0 3.065,-0.351 3.958,-1.045 C 9.508,9.588 9.91,8.731 9.91,7.615 V 6.194 H 4.943 c -4.152,0 -7.511,-0.71 -9.984,-2.11 C -7.7,2.58 -9.048,0.44 -9.048,-2.273 c 0,-2.604 0.958,-4.684 2.846,-6.181 1.818,-1.443 4.442,-2.175 7.801,-2.175 2.038,0 3.97,0.434 5.744,1.287 1.046,0.504 1.984,1.088 2.805,1.747 0.104,-0.54 0.24,-1.145 0.406,-1.803 l 0.19,-0.755 h 7.888 l -0.515,1.355 c -0.268,0.708 -0.456,1.441 -0.556,2.179'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,514.74106,-252.83205)'
             />
             <path
               d='m 0,0 v -5.508 h 13.215 v -29.441 h 7.492 V -5.508 H 34.089 V 0 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,547.05503,-292.07093)'
             />
             <path
@@ -374,22 +374,22 @@ export const Icons = {
             />
             <path
               d='M 0,0 -0.125,0.054 2.91,14.366 3.036,14.312 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,149.94178,-218.31703)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,151.22295,-213.4142)'
             />
             <path
               d='M 0,0 -0.254,0.283 18.173,9.645 18.427,9.363 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,149.48729,-216.2022)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,180.76664,-229.01376)'
             />
             <path
@@ -414,7 +414,7 @@ export const Icons = {
             />
             <path
               d='m 0,0 c 0.498,-1.304 -0.156,-2.763 -1.459,-3.261 -1.303,-0.497 -2.764,0.156 -3.261,1.459 -0.498,1.304 0.156,2.764 1.459,3.261 C -1.958,1.957 -0.498,1.304 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.5824744,0,0,-1.5824744,167.02776,-356.52512)'
             />
           </g>
@@ -441,254 +441,254 @@ export const Icons = {
             >
               <path
                 d='M 0,0 -0.286,0.066 8.398,37.792 8.683,37.726 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,224.41173,175.96787)'
               />
               <path
                 d='M 0,0 -20.17,0.066 -20.168,0.358 0.001,0.293 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.34573,126.82907)'
               />
               <path
                 d='m 0,0 -0.279,-0.094 -9.289,27.091 0.277,0.093 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.53107,126.5712)'
               />
               <path
                 d='m 0,0 -0.272,0.109 10.879,27.025 0.271,-0.109 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,208.63507,126.61867)'
               />
               <path
                 d='M 0,0 -0.264,0.127 9.6,20.469 9.864,20.341 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,194.7448,154.03187)'
               />
               <path
                 d='m 0,0 -22.213,15.864 0.17,0.239 L 0.169,0.239 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,224.0724,175.25813)'
               />
               <path
                 d='m 0,0 -12.172,24.753 0.263,0.13 L 0.263,0.13 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,210.6232,187.03773)'
               />
               <path
                 d='m 0,0 -14.326,17.195 0.225,0.187 L 0.225,0.188 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,254.29693,149.68533)'
               />
               <path
                 d='M 0,0 -0.244,0.161 19.75,30.244 19.994,30.083 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,235.5084,126.7408)'
               />
               <path
                 d='m 0,0 -0.276,-0.101 -4.523,13.734 0.276,0.101 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,299.86667,101.6064)'
               />
               <path
                 d='m 0,0 -23.735,-2.37 -0.03,0.292 23.736,2.369 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,293.67147,83.557467)'
               />
               <path
                 d='m 0,0 -29.257,-3.613 -0.037,0.291 29.258,3.613 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,262.0284,86.716533)'
               />
               <path
                 d='m 0,0 -25.966,-9.49 -0.099,0.275 25.965,9.49 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,257.68133,78.8688)'
               />
               <path
                 d='M 0,0 -27.028,3.509 -26.99,3.799 0.038,0.29 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,293.6268,83.556533)'
               />
               <path
                 d='M 0,0 -0.287,0.055 4.566,25.107 4.853,25.051 Z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,194.75987,153.98307)'
               />
               <path
                 d='m 0,0 -37.163,-13.136 -0.098,0.275 37.163,13.137 z'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,258.52227,108.20293)'
               />
               <path
                 d='m 0,0 c 0.498,-1.303 -0.155,-2.763 -1.459,-3.26 -1.302,-0.498 -2.763,0.155 -3.26,1.459 -0.498,1.303 0.156,2.763 1.459,3.261 C -1.957,1.957 -0.497,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,198.8188,152.72973)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.155,-2.765 -1.459,-3.262 -1.303,-0.497 -2.762,0.157 -3.261,1.46 -0.497,1.303 0.156,2.763 1.46,3.261 C -1.956,1.957 -0.497,1.303 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,211.73093,126.03627)'
               />
               <path
                 d='m 0,0 c 0.499,-1.304 -0.155,-2.763 -1.459,-3.26 -1.303,-0.497 -2.762,0.155 -3.26,1.459 -0.498,1.303 0.156,2.763 1.46,3.26 C -1.956,1.957 -0.497,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,226.104,89.311867)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.155,-2.764 -1.459,-3.262 -1.303,-0.497 -2.762,0.157 -3.261,1.461 -0.497,1.302 0.156,2.762 1.46,3.261 C -1.956,1.957 -0.497,1.303 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,238.4916,125.43227)'
               />
               <path
                 d='m 0,0 c 0.496,-1.302 -0.156,-2.763 -1.46,-3.26 -1.303,-0.498 -2.763,0.156 -3.26,1.459 -0.499,1.303 0.155,2.764 1.459,3.262 C -1.958,1.958 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,228.86547,173.5652)'
               />
               <path
                 d='m 0,0 c 0.497,-1.304 -0.156,-2.763 -1.46,-3.26 -1.303,-0.498 -2.763,0.154 -3.26,1.458 -0.498,1.305 0.156,2.764 1.459,3.262 C -1.957,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,257.14107,149.3724)'
               />
               <path
                 d='m 0,0 c 0.498,-1.303 -0.156,-2.763 -1.46,-3.26 -1.303,-0.497 -2.762,0.156 -3.26,1.459 -0.498,1.304 0.156,2.763 1.459,3.261 C -1.957,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,262.49107,107.1992)'
               />
               <path
                 d='m 0,0 c 0.498,-1.304 -0.156,-2.763 -1.459,-3.261 -1.303,-0.497 -2.764,0.156 -3.261,1.459 -0.498,1.304 0.156,2.764 1.459,3.261 C -1.958,1.957 -0.498,1.304 0,0'
-                className='fill-primary dark:fill-white'
+                className='logo-primary-fill fill-primary dark:fill-white'
                 transform='matrix(1.3333333,0,0,-1.3333333,265.32147,86.624267)'
               />
             </g>
             <path
               d='m 402.36831,-371.78229 -48.02933,16.37067 -0.12534,-0.36934 48.02934,-16.372 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 402.02218,-345.07429 h 0.38933 l 0.0893,-26.892 -0.39067,-10e-4 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 353.91218,-356.12149 -0.31867,-0.22667 21.152,-29.61733 0.31734,0.228 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 343.34351,-371.08095 -0.16267,-0.352 31.64267,-14.59467 0.16267,0.35467 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 352.76218,-356.09389 -9.66533,-15.05733 0.32933,-0.21067 9.66533,15.05733 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 319.85658,-341.69109 -0.144,-0.36267 34.48933,-13.724 0.14534,0.36267 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 319.93805,-341.74962 -0.30533,-0.24533 23.47733,-29.38267 0.30667,0.24267 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 318.66471,-304.99149 -0.39067,-0.0133 1.31467,-36.87467 0.39067,0.0147 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 346.58405,-302.94669 -28.12667,-1.85733 0.0253,-0.38934 28.128,1.85734 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 346.43631,-303.03082 -26.812,-38.72933 0.32,-0.224 26.81467,38.732 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 345.69431,-301.57509 -0.38267,-0.0627 8.772,-53.98933 0.384,0.0627 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 379.14258,-325.84575 -25.016,-29.624 0.29867,-0.252 25.016,29.62267 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 346.71591,-302.98735 -0.23867,-0.30933 30.916,-23.83067 0.23734,0.30933 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 366.44951,-288.20789 -0.372,-0.11733 12.01467,-38.15867 0.37333,0.116 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 330.24658,-273.95882 -0.36667,0.136 -11.592,-31.10667 0.36534,-0.13733 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 330.23338,-273.79722 -0.34267,-0.188 15.80134,-28.97067 0.34533,0.188 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 412.78725,-377.19309 -37.92533,-8.468 0.0853,-0.38133 37.92533,8.468 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 346.45578,-303.80335 -18.79067,-11.85333 0.208,-0.33067 18.792,11.85333 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='m 327.43218,-316.51629 -0.37333,0.11067 -7.46134,-25.41067 0.37334,-0.112 z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
             />
             <path
               d='M 0,0 C -1.304,-0.497 -2.764,0.155 -3.261,1.459 -3.758,2.762 -3.106,4.222 -1.802,4.721 -0.499,5.217 0.961,4.563 1.459,3.261 1.955,1.957 1.302,0.498 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,414.04258,-373.90842)'
             />
             <path
               d='M 0,0 C -1.303,-0.497 -2.763,0.157 -3.261,1.459 -3.757,2.763 -3.104,4.222 -1.801,4.72 -0.498,5.217 0.963,4.564 1.461,3.261 1.957,1.958 1.304,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,403.41765,-341.92789)'
             />
             <path
               d='M 0,0 C -1.304,-0.497 -2.764,0.157 -3.261,1.459 -3.758,2.763 -3.105,4.222 -1.802,4.72 -0.499,5.218 0.962,4.565 1.459,3.261 1.956,1.958 1.302,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,355.28805,-351.55549)'
             />
             <path
               d='m 0,0 c -1.303,-0.497 -2.763,0.157 -3.26,1.459 -0.498,1.303 0.155,2.763 1.459,3.26 C -0.498,5.217 0.962,4.564 1.46,3.26 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,328.44591,-313.31469)'
             />
             <path
               d='M 0,0 C -1.303,-0.498 -2.763,0.155 -3.261,1.459 -3.758,2.763 -3.104,4.222 -1.801,4.72 -0.498,5.217 0.962,4.564 1.461,3.26 1.957,1.956 1.304,0.498 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,347.79765,-299.99549)'
             />
             <path
               d='M 0,0 C -1.303,-0.498 -2.764,0.156 -3.261,1.459 -3.758,2.763 -3.105,4.223 -1.801,4.72 -0.498,5.218 0.962,4.565 1.459,3.261 1.956,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,379.47911,-323.27909)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,367.79525,-284.82322)'
             />
             <path
               d='M 0,0 C -1.304,-0.498 -2.764,0.155 -3.26,1.459 -3.758,2.763 -3.105,4.223 -1.802,4.72 -0.498,5.218 0.961,4.564 1.459,3.261 1.957,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,331.26418,-270.74402)'
             />
             <path
               d='M 0,0 C -1.302,-0.497 -2.763,0.155 -3.26,1.458 -3.758,2.762 -3.104,4.222 -1.801,4.721 -0.498,5.218 0.962,4.563 1.46,3.26 1.956,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,320.36325,-302.10122)'
             />
             <path
               d='m 0,0 c -1.303,-0.497 -2.763,0.155 -3.261,1.459 -0.497,1.304 0.157,2.763 1.46,3.262 C -0.498,5.217 0.962,4.564 1.459,3.26 1.957,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,321.06271,-337.35095)'
             />
             <path
               d='m 0,0 c -1.303,-0.498 -2.764,0.157 -3.261,1.459 -0.498,1.304 0.157,2.763 1.46,3.26 C -0.499,5.217 0.961,4.564 1.459,3.261 1.956,1.957 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,344.46378,-368.11015)'
             />
             <path
@@ -718,22 +718,22 @@ export const Icons = {
             />
             <path
               d='M 0,0 -0.125,0.054 2.91,14.366 3.036,14.312 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,363.34725,-270.56789)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,364.42671,-266.43695)'
             />
             <path
               d='M 0,0 -0.254,0.283 18.173,9.645 18.427,9.363 Z'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,362.96431,-268.78602)'
             />
             <path
               d='m 0,0 c -1.304,-0.497 -2.764,0.157 -3.26,1.459 -0.498,1.304 0.155,2.763 1.458,3.26 C -0.499,5.217 0.962,4.564 1.459,3.261 1.957,1.958 1.303,0.497 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,389.31911,-279.58055)'
             />
             <path
@@ -758,7 +758,7 @@ export const Icons = {
             />
             <path
               d='m 0,0 c 0.498,-1.304 -0.156,-2.763 -1.459,-3.261 -1.303,-0.497 -2.764,0.156 -3.261,1.459 -0.498,1.304 0.156,2.764 1.459,3.261 C -1.958,1.957 -0.498,1.304 0,0'
-              className='fill-primary dark:fill-white'
+              className='logo-primary-fill fill-primary dark:fill-white'
               transform='matrix(1.3333333,0,0,-1.3333333,377.74325,-387.01682)'
             />
           </g>
