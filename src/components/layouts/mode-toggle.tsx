@@ -1,8 +1,13 @@
 'use client'
+import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 
-export function ModeToggle () {
+interface ModeToggleProps {
+  className?: string
+}
+
+export function ModeToggle ({ className }: ModeToggleProps) {
   const { setTheme, theme } = useTheme()
 
   const modeVariants = {
@@ -24,7 +29,7 @@ export function ModeToggle () {
 
   return (
     <button
-      className='relative'
+      className={cn('relative', className)}
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
     >
       <motion.svg
@@ -34,7 +39,6 @@ export function ModeToggle () {
         viewBox='0 0 15 15'
         fill='currentColor'
         aria-hidden='true'
-        className='h-auto w-6 scale-0 fill-white'
         variants={modeVariants}
         initial='dark'
         animate={theme}
@@ -42,6 +46,7 @@ export function ModeToggle () {
           delay: theme === 'light' ? 0.25 : 0,
           ...transitionConfig
         }}
+        className='h-auto w-6 scale-0'
       >
         <title>Cambiar a modo oscuro</title>
         <path
@@ -69,7 +74,6 @@ export function ModeToggle () {
         viewBox='0 0 15 15'
         fill='currentColor'
         aria-hidden='true'
-        className='absolute top-0 h-auto w-6 scale-0'
         variants={modeVariants}
         initial='dark'
         animate={theme === 'light' ? 'dark' : 'light'}
@@ -77,6 +81,7 @@ export function ModeToggle () {
           delay: theme === 'dark' ? 0.25 : 0,
           ...transitionConfig
         }}
+        className='absolute top-0 h-auto w-6 scale-0'
       >
         <title>Cambiar a modo calro</title>
         <path

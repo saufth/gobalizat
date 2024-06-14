@@ -50,7 +50,7 @@ export default function SiteHeader () {
           duration: 0.5
         }}
         className={cn(
-          'w-full fixed top-0 left-0 z-40 backdrop-filter backdrop-saturate-150 backdrop-blur-lg border-b',
+          'w-full fixed top-0 left-0 z-40 backdrop-filter backdrop-saturate-200 backdrop-blur-xl border-b',
           (isOnTop || isMenuOpen) && 'backdrop-filter-none'
         )}
       >
@@ -66,7 +66,7 @@ export default function SiteHeader () {
                 </NextLink>
               </div>
               <div className='flex items-center gap-x-6'>
-                <ModeToggle />
+                <ModeToggle className={(isOnTop && !isMenuOpen) ? '[&_svg]:fill-white' : ''} />
                 <button className='w-9 h-2.5 relative' onClick={toggleMenu}>
                   <motion.span
                     initial={{
@@ -75,7 +75,7 @@ export default function SiteHeader () {
                       left: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(100% 0 0)',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
                       top: isMenuOpen ? 3.8 : 0,
                       left: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? 45 : 0
@@ -93,7 +93,7 @@ export default function SiteHeader () {
                       right: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : 'oklch(100% 0 0)',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
                       bottom: isMenuOpen ? 3.8 : 0,
                       right: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? -45 : 0
