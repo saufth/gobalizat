@@ -1,13 +1,13 @@
 'use client'
 import { useState } from 'react'
+import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { CallToAction } from '@/components/call-to-action'
 import { Icons } from '@/components/icons'
 import { ModeToggle } from '@/components/layouts/mode-toggle'
 import Menu from '@/components/layouts/menu'
 import NextLink from '@/components/ui/next-link'
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
+import { siteConfig } from '@/config/site'
 
 export default function SiteHeader () {
   const { scrollYProgress } = useScroll()
@@ -39,20 +39,22 @@ export default function SiteHeader () {
       <motion.header
         initial={{
           y: 0,
-          borderColor: 'transparent'
+          backgroundColor: 'oklch(var(--background) / 0)',
+          backdropFilter: 'none',
+          borderColor: 'oklch(var(--border) / 0)'
         }}
         animate={{
           y: visible || isMenuOpen ? 0 : -100,
-          backgroundColor: isOnTop || isMenuOpen ? 'oklch(var(--background)/0)' : 'oklch(var(--background)/0.8)',
-          borderColor: isOnTop || isMenuOpen ? 'transparent' : 'oklch(var(--border))'
+          backgroundColor: isOnTop || isMenuOpen ? 'oklch(var(--background)/0)' : 'oklch(var(--background)/0.9)',
+          backdropFilter: isOnTop || isMenuOpen
+            ? 'none'
+            : 'var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)',
+          borderColor: isOnTop || isMenuOpen ? 'oklch(var(--border)/0)' : 'oklch(var(--border)/1)'
         }}
         transition={{
           duration: 0.5
         }}
-        className={cn(
-          'w-full fixed top-0 left-0 z-40 backdrop-filter backdrop-saturate-200 backdrop-blur-xl border-b',
-          (isOnTop || isMenuOpen) && 'backdrop-filter-none'
-        )}
+        className='w-full sticky top-0 left-0 z-40 backdrop-filter backdrop-saturate-200 backdrop-blur-xl border-b'
       >
         <nav aria-label={`${siteConfig.name} directory`}>
           <div className='container relative z-10'>
@@ -112,19 +114,9 @@ export default function SiteHeader () {
           </div>
         </nav>
       </motion.header>
-      <motion.div
-        initial={{ height: '0px' }}
-        animate={{ height: isMenuOpen ? '100dvh' : '0px' }}
-        transition={{
-          duration: 0.8,
-          type: 'spring'
-        }}
-        className='w-full bg-background/90 backdrop-filter backdrop-blur-md fixed flex flex-col justify-between top-0 left-0 z-30 overflow-x-hidden overflow-y-auto'
-      >
-        <div className='container mt-spacing-8 md:mt-spacing-9 pb-gutter'>
-          <Menu action={closeMenu} />
-        </div>
-      </motion.div>
+      <AnimatePresence>
+        {isMenuOpen && <Menu action={closeMenu} />}
+      </AnimatePresence>
     </>
   )
 }

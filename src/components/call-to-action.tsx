@@ -4,14 +4,14 @@ import NextLink from '@/components/ui/next-link'
 import { cn } from '@/lib/utils'
 import { siteNav } from '@/config/site'
 
-const routes = {
+const siteRoutes = {
   contact: siteNav.find((navItem) => navItem.title === 'Contáctanos')
 }
 
 interface CallToActionProps
   extends Pick<ComponentProps<typeof NextLink>, 'className' | 'onClick'>,
     ButtonVariantProps {
-  to: keyof typeof routes
+  to: keyof typeof siteRoutes
 }
 
 export const CallToAction = (

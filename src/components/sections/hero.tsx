@@ -10,7 +10,12 @@ export interface HeroProps extends Title, Partial<Description>, PropsWithChildre
 
 export const Hero = ({ title, description, children, className }: HeroProps) => {
   return (
-    <section className={cn('screen-container relative overflow-hidden', className)}>
+    <section
+      className={cn(
+        'screen-container relative overflow-hidden -mt-[75px] lg:-mt-[97px]',
+        className
+      )}
+    >
       <div className='container h-full flex flex-col justify-center relative z-10'>
         <div className='max-w-md sm:max-w-xl xl:max-w-3xl mt-spacing-6'>
           <h1 className='f-display-2 font-primary font-bold text-white'>

@@ -24,7 +24,7 @@
     --border: 91.97% 0.004 286.32; /* #E4E4E7 */
     --input: 91.97% 0.004 286.32; /* #E4E4E7 */
     --ring: 21.03% 0.006 285.88; /* #18181B */
-    --radius: 0.8rem;
+    --radius: 0.5rem;
     /* Shell */
     --inner-gutter: 16px;
     --outer-gutter: 16px;
@@ -113,9 +113,9 @@
     }
   }
 
-  @media (min-width: 1680px) {
+  @media (min-width: 1460px) {
     :root {
-      --container-width: 1632px;
+      --container-width: 1440px;
     }
   }
 
@@ -178,7 +178,7 @@
   }
 
   .f-heading-1 {
-    @apply text-[1.75rem] sm:text-[2.25rem] xl:text-[3rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.75rem] sm:text-[2.25rem] xl:text-[3rem];
   }
 
   .f-heading-2 {
@@ -186,7 +186,7 @@
   }
 
   .f-heading-3 {
-    @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.4rem] md:text-[1.75rem] xl:text-[2rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
   }
 
   .f-subhead-1 {
@@ -194,19 +194,15 @@
   }
 
   .f-subhead-2 {
-    @apply text-[1.2rem] sm:text-[1.25rem] lg:text-2xl leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.2rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
   }
 
   .f-subhead-3 {
-    @apply text-[1.125rem] xl:text-[1.2rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.125rem] sm:text-[1.1875rem] lg:text-[1.375rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
   }
 
   .f-body-1 {
-    @apply text-[1rem] xl:text-[1.125rem] leading-[140%];
-  }
-
-  .f-header {
-    @apply font-primary x:leading-[160%] sm:leading-[160%] xl:leading-[160%] -tracking-tight;
+    @apply text-[1rem] xl:text-[1.125rem] leading-[140%] tracking-wide;
   }
 
   /* Container */

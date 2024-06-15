@@ -1,13 +1,13 @@
 import { Icons } from '@/components/icons'
 import { Link } from '@/components/ui/link'
-import Menu from '@/components/layouts/menu'
+import MainNav from '@/components/layouts/main-nav'
 
 export default function SiteFooter () {
   return (
     <footer className='bg-card border-t mt-spacing-9'>
       <div className='container'>
         <div className='py-spacing-7'>
-          <Menu muted />
+          <MainNav muted />
         </div>
         <div className='pb-spacing-4 flex flex-col gap-y-spacing-4 md:flex-row justify-between'>
           <div className='flex items-center gap-x-2 md:pt-1 lg:pt-2 order-2 md:order-1'>
