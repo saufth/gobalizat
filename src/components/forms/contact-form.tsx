@@ -153,7 +153,7 @@ export default function ContactForm () {
           />
         </div>
         <Button
-          className='[&>*]:text-primary-foreground lg:w-full'
+          className='[&>*]:text-accent-foreground lg:w-full'
           size='full'
           disabled={isPending}
         >
@@ -164,7 +164,7 @@ export default function ContactForm () {
               </span>)
             : (
               <span className='pt-px lg:pt-0 flex items-center gap-x-spacing-2 uppercase lg:font-medium text-xs lg:text-sm tracking-wider'>
-                Enviar <PaperPlaneIcon className='h-3 xl:h-3 w-3.5 xl:w-3.5 [&>*]:fill-primary-foreground' aria-hidden='true' />
+                Enviar <PaperPlaneIcon className='h-3 xl:h-3 w-3.5 xl:w-3.5 [&>*]:fill-accent-foreground' aria-hidden='true' />
               </span>)}
         </Button>
       </form>

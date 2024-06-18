@@ -14,7 +14,7 @@ export default function ContactPage () {
   return (
     <>
       <section>
-        <div className='container pt-spacing-9'>
+        <div className='container pt-spacing-7'>
           <SectionHeader
             title='Contáctanos hoy mismo'
             description='¿Listo para expandir tu negocio?'
