@@ -1,8 +1,8 @@
-interface BackgroundVideoProps {
+export interface BackgroundVideoProps {
   src: string
 }
 
-export default function BackgroundVideo ({ src }: BackgroundVideoProps) {
+export function BackgroundVideo ({ src }: BackgroundVideoProps) {
   return (
     <div className='absolute inset-0 overflow-hidden z-0'>
       <video

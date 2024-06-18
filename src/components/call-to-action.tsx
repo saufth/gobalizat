@@ -5,20 +5,21 @@ import { cn } from '@/lib/utils'
 import { siteNav } from '@/config/site'
 
 const siteRoutes = {
-  contact: siteNav.find((navItem) => navItem.title === 'Contáctanos')
+  services: siteNav.find((navItem) => navItem.href === '/servicios')!,
+  contact: siteNav.find((navItem) => navItem.href === '/contacto')!
 }
 
-interface CallToActionProps
+export interface CallToActionProps
   extends Pick<ComponentProps<typeof NextLink>, 'className' | 'onClick'>,
     ButtonVariantProps {
-  to: keyof typeof siteRoutes
+  to?: keyof typeof siteRoutes
 }
 
 export const CallToAction = (
   {
     className,
     onClick,
-    to,
+    to = 'contact',
     size = 'lg',
     variant
   }: CallToActionProps
@@ -29,15 +30,15 @@ export const CallToAction = (
       size={size}
       variant={variant}
       className={cn(
-        'hidden sm:inline-flex lg:font-medium text-sm lg:text-lg tracking-wider',
+        'hidden sm:inline-flex lg:font-medium text-sm lg:text-lg tracking-wide',
         className
       )}
     >
       <NextLink
-        href={to}
+        href={siteRoutes[to].href}
         onClick={onClick}
       >
-        Contáctanos
+        {siteRoutes[to]?.title}
       </NextLink>
     </Button>
   )

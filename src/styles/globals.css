@@ -124,10 +124,6 @@
     @apply border-border text-foreground;
   }
 
-  p {
-    @apply italic;
-  }
-
   ::selection {
     @apply bg-accent text-accent-foreground;
   }
@@ -178,7 +174,7 @@
   }
 
   .f-heading-1 {
-    @apply text-[1.75rem] sm:text-[2.25rem] xl:text-[3rem];
+    @apply text-[1.75rem] sm:text-[2.25rem] xl:text-[3rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
   }
 
   .f-heading-2 {
@@ -202,7 +198,7 @@
   }
 
   .f-body-1 {
-    @apply text-[1rem] xl:text-[1.125rem] leading-[140%] tracking-wide;
+    @apply text-[1rem] xl:text-[1.125rem] leading-[130%] xl:leading-[140%] xl:tracking-wide;
   }
 
   /* Container */

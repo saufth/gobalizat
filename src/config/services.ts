@@ -6,8 +6,7 @@ export const services = {
       title: 'Asesoría de alta dirección y empresarial',
       description: [
         'Proveemos asesoría especializada para la alta dirección y equipos ejecutivos, enfocándonos en la toma de decisiones estratégicas que impulsen el crecimiento y la competitividad de las empresas.',
-        'Nuestro equipo de consultores experimentados trabaja estrechamente con los líderes empresariales para desarrollar e implementar estrategias efectivas, optimizar operaciones y maximizar el rendimiento organizacional.',
-        'Nos comprometemos a ofrecer soluciones personalizadas que aborden los desafíos específicos de cada empresa, asegurando resultados sostenibles y un impacto positivo en su desempeño global.'
+        'Nuestro equipo de consultores experimentados trabaja estrechamente con los líderes empresariales para desarrollar e implementar estrategias efectivas, optimizar operaciones y maximizar el rendimiento organizacional.'
       ],
       image: {
         src: '/images/services/service-asesoria-de-alta-dirección-y-empresarial.webp',

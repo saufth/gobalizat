@@ -4,7 +4,6 @@ import localFont from 'next/font/local'
 export const fontSans = RobotoFont({
   weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
-  style: ['italic', 'normal'],
   display: 'swap',
   variable: '--font-sans'
 })

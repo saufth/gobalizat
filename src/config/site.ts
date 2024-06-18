@@ -6,6 +6,7 @@ import type {
   NavItem,
   NavItemExternal
 } from '@/types'
+import { blog } from './blog'
 
 export const author: NextAuthor = {
   name: 'saufth',
@@ -14,22 +15,26 @@ export const author: NextAuthor = {
 
 export const homeNav: MainNavItem[] = [
   {
+    title: 'Acerca de nosotros',
+    href: '/#nosotros'
+  },
+  {
     title: 'Preguntas frecuentes',
     href: '/#preguntas-frecuentes'
   }
 ]
 
+export const blogNav: MainNavItem[] = [
+  ...blog.map((blogItem) => ({ title: blogItem.title, href: blogItem.slug }))
+]
+
 export const siteNav: MainNavItem[] = [
-  {
-    title: 'Acerca de nosotros',
-    href: '/nosotros'
-  },
   {
     title: 'Nuestros servicios',
     href: '/servicios'
   },
   {
-    title: 'Contáctanos',
+    title: 'Ponte en contacto',
     href: '/contacto'
   }
 ]

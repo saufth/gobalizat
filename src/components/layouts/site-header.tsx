@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { CallToAction } from '@/components/call-to-action'
 import { Icons } from '@/components/icons'
@@ -10,6 +11,7 @@ import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
 
 export default function SiteHeader () {
+  const pathname = usePathname()
   const { scrollYProgress } = useScroll()
   const [isOnTop, setIsOnTop] = useState(true)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -62,13 +64,16 @@ export default function SiteHeader () {
               <div className='h-12 lg:h-16'>
                 <NextLink href='/' onClick={closeMenu}>
                   <Icons.Logotype
-                    className={cn('w-auto h-full', (isOnTop && !isMenuOpen) && '[&_.logo-primary-fill]:fill-white')}
+                    className={cn(
+                      'w-auto h-full',
+                      (pathname === '/' && isOnTop && !isMenuOpen) && '[&_.logo-primary-fill]:fill-white'
+                    )}
                   />
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </NextLink>
               </div>
               <div className='flex items-center gap-x-6'>
-                <ModeToggle className={(isOnTop && !isMenuOpen) ? '[&_svg]:fill-white' : ''} />
+                <ModeToggle className={(pathname === '/' && isOnTop && !isMenuOpen) ? '[&_svg]:fill-white' : ''} />
                 <button className='w-9 h-2.5 relative' onClick={toggleMenu}>
                   <motion.span
                     initial={{
@@ -77,7 +82,7 @@ export default function SiteHeader () {
                       left: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : pathname === '/' && isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
                       top: isMenuOpen ? 3.8 : 0,
                       left: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? 45 : 0
@@ -95,7 +100,7 @@ export default function SiteHeader () {
                       right: 0
                     }}
                     animate={{
-                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
+                      backgroundColor: isMenuOpen ? 'oklch(var(--accent))' : pathname === '/' && isOnTop ? 'oklch(100% 0 0)' : 'oklch(var(--foreground))',
                       bottom: isMenuOpen ? 3.8 : 0,
                       right: isMenuOpen ? 3.6 : 0,
                       rotate: isMenuOpen ? -45 : 0

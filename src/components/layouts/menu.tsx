@@ -31,7 +31,7 @@ export default function Menu (props: MenuProps) {
         duration: 0.5,
         type: 'spring'
       }}
-      className='bg-background/90 backdrop-filter backdrop-blur-md fixed flex flex-col justify-between top-0 left-0 z-30 overflow-x-hidden overflow-y-auto'
+      className='w-screen bg-background/90 backdrop-filter backdrop-blur-md fixed flex flex-col justify-between top-0 left-0 z-30 overflow-x-hidden overflow-y-auto'
     >
       <div className='container mt-spacing-8 md:mt-spacing-9 pb-gutter'>
         <MainNav {...props} />

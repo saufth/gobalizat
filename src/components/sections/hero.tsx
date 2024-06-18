@@ -1,14 +1,19 @@
 import { type PropsWithChildren } from 'react'
+import { CallToAction, type CallToActionProps } from '@/components/call-to-action'
+import { BackgroundVideo, type BackgroundVideoProps } from '@/components/background-video'
 import { cn } from '@/lib/utils'
 import type { Title, Description } from '@/types'
-import BackgroundVideo from '../background-video'
 
-export interface HeroProps extends Title, Partial<Description>, PropsWithChildren {
-  highlight?: number
+export interface HeroProps
+  extends Title,
+    Partial<Description>,
+    PropsWithChildren,
+    Partial<Pick<CallToActionProps, 'to'>>,
+    Partial<BackgroundVideoProps> {
   className?: string
 }
 
-export const Hero = ({ title, description, children, className }: HeroProps) => {
+export const Hero = ({ title, description, to, src, children, className }: HeroProps) => {
   return (
     <section
       className={cn(
@@ -17,21 +22,24 @@ export const Hero = ({ title, description, children, className }: HeroProps) => 
       )}
     >
       <div className='container h-full flex flex-col justify-center relative z-10'>
-        <div className='max-w-md sm:max-w-xl xl:max-w-3xl mt-spacing-6'>
-          <h1 className='f-display-2 font-primary font-bold text-white'>
-            {title}
-          </h1>
-          {description && (
-            <div className='mt-spacing-4'>
-              <p className='f-subhead-2 text-balance text-white'>
+        <div className='max-w-md sm:max-w-xl xl:max-w-3xl'>
+          <div className='space-y-spacing-4'>
+            <h1 className='f-display-3 font-primary font-bold text-white text-balance'>
+              {title}
+            </h1>
+            {description && (
+              <p className='f-subhead-3 text-balance text-white'>
                 {description}
               </p>
-            </div>
+            )}
+          </div>
+          {to && (
+            <CallToAction to={to} className='mt-spacing-5' />
           )}
         </div>
         {children}
       </div>
-      <BackgroundVideo src='/video/home-hero.mp4' />
+      {src && <BackgroundVideo src={src} />}
     </section>
   )
 }

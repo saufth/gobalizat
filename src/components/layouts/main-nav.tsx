@@ -7,7 +7,8 @@ import {
   contactEmail,
   socialNav,
   contactPhone,
-  address
+  address,
+  blogNav
 } from '@/config/site'
 
 export interface MenuProps {
@@ -17,8 +18,8 @@ export interface MenuProps {
 
 export default function MainNav ({ action, muted }: MenuProps) {
   return (
-    <div className='cols-container gap-y-spacing-6'>
-      <div className='w-6-cols sm:w-5-cols lg:w-9-cols flex flex-col gap-y-spacing-4 order-2 sm:order-1'>
+    <div className='cols-container gap-y-spacing-7'>
+      <div className='w-6-cols md:w-3-cols lg:w-5-cols flex flex-col gap-y-spacing-4 order-2 md:order-1'>
         <Link
           href={whatsappUrl(contactPhone)}
           onClick={action}
@@ -57,29 +58,52 @@ export default function MainNav ({ action, muted }: MenuProps) {
         <SocialNav items={socialNav} action={action} muted />
       </div>
       <nav
-        className='w-6-cols sm:w-3-cols lg:w-3-cols order-1 sm:order-2'
+        className='w-6-cols md:w-5-cols lg:w-7-cols order-1 md:order-2'
         aria-label={`${siteConfig.name} directorio`}
       >
-        <div>
-          <div className='text-xl sm:text-2xl text-muted-foreground font-medium'>
-            Navegación
+        <div className='cols-container gap-y-spacing-6'>
+          <div className='w-6-cols sm:w-4-cols lg:w-6-cols'>
+            <div className='text-lg sm:text-xl text-muted-foreground font-medium'>
+              Navegación
+            </div>
+            <ul className='space-y-spacing-3 mt-spacing-4'>
+              {siteConfig.mainNav.map((navItem, key) => {
+                return navItem.title !== 'Soluciones' && (
+                  <li key={key}>
+                    <Link
+                      href={navItem.href}
+                      onClick={action}
+                      aria-label={navItem.title}
+                      className={cn('text-base sm:text-lg font-bold text-balance', muted && 'text-card-foreground')}
+                    >
+                      {navItem.title}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
-          <ul className='space-y-spacing-3 mt-spacing-4'>
-            {siteConfig.mainNav.map((navItem, key) => {
-              return navItem.title !== 'Soluciones' && (
-                <li key={key}>
-                  <Link
-                    href={navItem.href}
-                    onClick={action}
-                    aria-label={navItem.title}
-                    className={cn('text-lg sm:text-xl font-bold', muted && 'text-card-foreground')}
-                  >
-                    {navItem.title}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+          <div className='w-6-cols sm:w-4-cols lg:w-6-cols'>
+            <div className='text-lg sm:text-xl text-muted-foreground font-medium'>
+              Blog
+            </div>
+            <ul className='space-y-spacing-3 mt-spacing-4'>
+              {blogNav.map((navItem, key) => {
+                return navItem.title !== 'Soluciones' && (
+                  <li key={key}>
+                    <Link
+                      href={navItem.href}
+                      onClick={action}
+                      aria-label={navItem.title}
+                      className={cn('text-base sm:text-lg font-bold text-balance', muted && 'text-card-foreground')}
+                    >
+                      {navItem.title}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </nav>
     </div>

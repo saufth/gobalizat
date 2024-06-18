@@ -20,14 +20,14 @@ export default function SiteFooter () {
             <Link
               href='/terminos-y-condiciones'
               variant='muted'
-              className='text-base lg:text-lg'
+              className='text-sm lg:text-base'
             >
               Términos y condiciones
             </Link>
             <Link
               href='/privacidad'
               variant='muted'
-              className='text-base lg:text-lg'
+              className='text-sm lg:text-base'
             >
               Política de privacidad
             </Link>
