@@ -30,7 +30,7 @@ export const CallToAction = (
       size={size}
       variant={variant}
       className={cn(
-        'hidden sm:inline-flex lg:font-medium text-sm lg:text-lg tracking-wide',
+        'lg:font-medium text-sm lg:text-lg tracking-wide',
         className
       )}
     >

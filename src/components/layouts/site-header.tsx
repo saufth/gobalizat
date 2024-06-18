@@ -113,7 +113,7 @@ export default function SiteHeader () {
                   />
                   <span className='sr-only'>Toggle menu</span>
                 </button>
-                <CallToAction to='contact' onClick={closeMenu} />
+                <CallToAction to='contact' onClick={closeMenu} className='hidden sm:inline-flex' />
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@ export default function IndexPage () {
                   <CallToAction to='services' className='mt-spacing-5' />
                 </div>
               </div>
-              <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols bg-secondary'>
+              <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols bg-secondary mt-spacing-5 md:mt-0'>
                 <Image
                   src='/images/home-services.webp'
                   alt=''
