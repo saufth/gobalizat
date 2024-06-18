@@ -24,7 +24,7 @@ export default function ServicesPage () {
             <article className='cols-container even:flex-row-reverse' key={key}>
               <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols mt-spacing-4 md:mt-0 order-2 lg:px-spacing-3'>
                 <div className='sm:max-w-lg'>
-                  <h3 className='f-heading-2 font-light text-balance'>
+                  <h3 className='f-heading-2 text-balance'>
                     {serviceItem.title}
                   </h3>
                   <div className='space-y-spacing-3 mt-spacing-4'>

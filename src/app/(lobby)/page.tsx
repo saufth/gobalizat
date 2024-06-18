@@ -27,11 +27,12 @@ export default function IndexPage () {
       <Hero
         title={siteConfig.slogan}
         description={siteConfig.description}
+        to='contact'
         src='/video/home-hero.mp4'
       />
-      <section className='mt-spacing-9'>
-        <div className='container'>
-          <div className='space-y-spacing-7 mt-spacing-7'>
+      <section>
+        <div className='container pt-spacing-8'>
+          <div className='space-y-spacing-7'>
             <div className='cols-container'>
               <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols mt-spacing-4 md:mt-0'>
                 <div className='sm:max-w-lg'>
@@ -42,7 +43,7 @@ export default function IndexPage () {
                   <CallToAction to='services' className='mt-spacing-5' />
                 </div>
               </div>
-              <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols bg-secondary mt-spacing-5 md:mt-0'>
+              <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols bg-secondary mt-spacing-6 md:mt-0'>
                 <Image
                   src='/images/home-services.webp'
                   alt=''
@@ -57,8 +58,8 @@ export default function IndexPage () {
           </div>
         </div>
       </section>
-      <section id='nosotros' className='mt-spacing-9'>
-        <div className='container'>
+      <section id='nosotros'>
+        <div className='container pt-spacing-8'>
           <div className='space-y-spacing-3'>
             <h2 className='text-xs sm:text-sm xl:text-base uppercase text-muted-foreground text-balance font-medium'>
               {aboutUs.title}
@@ -67,17 +68,17 @@ export default function IndexPage () {
               {aboutUs.description}
             </p>
           </div>
-          <div className='space-y-spacing-7 mt-spacing-7'>
+          <div className='space-y-spacing-6 mt-spacing-6'>
             {aboutUs.items.map((aboutUsItem, key) => (
               <article className='cols-container even:flex-row-reverse' key={key}>
                 <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols mt-spacing-4 md:mt-0 order-2 lg:px-spacing-3'>
                   <div className='sm:max-w-lg'>
-                    <h3 className='f-heading-2 font-light text-balance'>
+                    <h3 className='f-heading-2 text-balance'>
                       {aboutUsItem.title}
                     </h3>
                     <div className='space-y-spacing-3 mt-spacing-4'>
                       {aboutUsItem.description.map((descriptionItem, key) => (
-                        <p className='f-body-1 font-light text-balance' key={key}>
+                        <p className='f-body-1 text-balance' key={key}>
                           {descriptionItem}
                         </p>
                       ))}
@@ -101,12 +102,12 @@ export default function IndexPage () {
         </div>
       </section>
       <section>
-        <div className='container pt-spacing-9'>
+        <div className='container pt-spacing-8'>
           <SectionHeader
             title='Nuestro blog'
             description='Lorem ipsum dolor sit amet espectatum amet ipsum.'
           />
-          <div className='cols-container mt-spacing-5 gap-y-gutter relative z-10'>
+          <div className='cols-container mt-spacing-6 gap-y-gutter relative z-10'>
             {blog.map((blogItem, key) => (
               <div className='w-6-cols xs:w-3-cols md:w-4-cols lg:w-6-cols' key={key}>
                 <NextLink href={blogItem.slug}>
@@ -140,8 +141,8 @@ export default function IndexPage () {
           </div>
         </div>
       </section>
-      <section id='preguntas-frecuentes' className='pt-spacing-9'>
-        <div className='container'>
+      <section id='preguntas-frecuentes'>
+        <div className='container pt-spacing-7'>
           <SectionHeader
             title={faq.title}
             description={faq.description}
@@ -150,10 +151,10 @@ export default function IndexPage () {
             <Accordion type='single' collapsible className='w-full'>
               {faq.items.map((faqItem, key) => (
                 <AccordionItem value={`item-${key}`} key={`item-${key}`}>
-                  <AccordionTrigger className='f-subhead-2 text-left'>
+                  <AccordionTrigger className='f-subhead-3 text-left'>
                     {faqItem.title}
                   </AccordionTrigger>
-                  <AccordionContent className='f-subhead-3'>
+                  <AccordionContent className='f-body-1'>
                     {faqItem.description}
                   </AccordionContent>
                 </AccordionItem>

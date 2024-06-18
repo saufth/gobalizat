@@ -4,7 +4,7 @@ import MainNav from '@/components/layouts/main-nav'
 
 export default function SiteFooter () {
   return (
-    <footer className='bg-card border-t mt-spacing-9'>
+    <footer className='bg-card border-t mt-spacing-8'>
       <div className='container'>
         <div className='py-spacing-7'>
           <MainNav muted />

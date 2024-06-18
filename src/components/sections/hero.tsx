@@ -21,10 +21,10 @@ export const Hero = ({ title, description, to, src, children, className }: HeroP
         className
       )}
     >
-      <div className='container h-full flex flex-col justify-center relative z-10'>
-        <div className='max-w-md sm:max-w-xl xl:max-w-3xl'>
+      <div className='container h-full flex flex-col justify-center relative z-10 pt-spacing-6'>
+        <div className='max-w-md sm:max-w-2xl lg:max-w-3xl'>
           <div className='space-y-spacing-4'>
-            <h1 className='f-display-3 font-primary font-bold text-white text-balance'>
+            <h1 className='f-display-2 font-primary font-bold text-white text-balance'>
               {title}
             </h1>
             {description && (
