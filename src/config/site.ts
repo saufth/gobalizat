@@ -43,7 +43,7 @@ export const domain = 'globalizat.com'
 
 export const contactEmail = `contacto@${domain}`
 
-export const contactPhone = '5555555555'
+export const contactPhone = '4422714413'
 
 export const socialNav: NavItem[] = [
   {
@@ -69,8 +69,8 @@ export const socialNav: NavItem[] = [
 ]
 
 export const address: NavItemExternal = {
-  name: 'Lorem ipsum #55 Int. #55 Col. Centro 55555, Querétaro, Qro.',
-  url: 'https://maps.app.goo.gl/eRYE6njBE8pBw3Vz6'
+  name: 'José María Truchuelo 16, Cimatario, 76030 Santiago de Querétaro, Qro.',
+  url: 'https://maps.app.goo.gl/Gtjf5kqQ1YAwRS3v8'
 }
 
 export const siteConfig: SiteConfig = {

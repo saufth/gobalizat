@@ -12,11 +12,13 @@ const siteRoutes = {
 export interface CallToActionProps
   extends Pick<ComponentProps<typeof NextLink>, 'className' | 'onClick'>,
     ButtonVariantProps {
+  children?: string
   to?: keyof typeof siteRoutes
 }
 
 export const CallToAction = (
   {
+    children,
     className,
     onClick,
     to = 'contact',
@@ -38,7 +40,7 @@ export const CallToAction = (
         href={siteRoutes[to].href}
         onClick={onClick}
       >
-        {siteRoutes[to]?.title}
+        {children || siteRoutes[to]?.title}
       </NextLink>
     </Button>
   )

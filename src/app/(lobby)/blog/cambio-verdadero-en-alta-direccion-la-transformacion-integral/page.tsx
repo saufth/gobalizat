@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function CambioVerdaderoEnAltaDireccionLaTransformacionIntegralPage () {
   return (
     <>
-      <section className='pt-spacing-7'>
-        <div className='container'>
+      <section className='-mt-nav-h'>
+        <div className='container pt-spacing-9'>
           <h1 className='f-display-3 font-primary font-bold text-balance'>
             {article.title}
           </h1>

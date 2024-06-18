@@ -116,7 +116,7 @@ export default function ContactForm () {
           name='phone'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Whatsapp</FormLabel>
+              <FormLabel>Número de teléfono</FormLabel>
               <FormControl>
                 <Input
                   className='rounded-none'

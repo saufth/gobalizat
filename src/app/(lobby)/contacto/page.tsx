@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function ContactPage () {
   return (
     <>
-      <section>
-        <div className='container pt-spacing-7'>
+      <section className='-mt-nav-h'>
+        <div className='container pt-spacing-9'>
           <SectionHeader
             title='Contáctanos hoy mismo'
             description='¿Listo para expandir tu negocio?'

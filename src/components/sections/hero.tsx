@@ -17,7 +17,7 @@ export const Hero = ({ title, description, to, src, children, className }: HeroP
   return (
     <section
       className={cn(
-        'screen-container relative overflow-hidden -mt-[75px] lg:-mt-[97px]',
+        'screen-container relative overflow-hidden -mt-nav-h',
         className
       )}
     >

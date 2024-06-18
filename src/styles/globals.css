@@ -218,5 +218,9 @@
   .screen-container {
     @apply h-[100svh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px];
   }
+
+  .-mt-nav-h {
+    @apply -mt-[75px] lg:-mt-[97px];
+  }
 }
 

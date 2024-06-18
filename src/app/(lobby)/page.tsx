@@ -105,7 +105,7 @@ export default function IndexPage () {
         <div className='container pt-spacing-8'>
           <SectionHeader
             title='Nuestro blog'
-            description='Lorem ipsum dolor sit amet espectatum amet ipsum.'
+            description='Hecha un vistazo a nuestros últimos artículos.'
           />
           <div className='cols-container mt-spacing-6 gap-y-gutter relative z-10'>
             {blog.map((blogItem, key) => (
@@ -142,19 +142,19 @@ export default function IndexPage () {
         </div>
       </section>
       <section id='preguntas-frecuentes'>
-        <div className='container pt-spacing-7'>
+        <div className='container pt-spacing-8'>
           <SectionHeader
             title={faq.title}
             description={faq.description}
           />
-          <div className='mt-spacing-5'>
+          <div className='mt-spacing-4'>
             <Accordion type='single' collapsible className='w-full'>
               {faq.items.map((faqItem, key) => (
                 <AccordionItem value={`item-${key}`} key={`item-${key}`}>
-                  <AccordionTrigger className='f-subhead-3 text-left'>
+                  <AccordionTrigger className='f-subhead-3 text-left text-balance'>
                     {faqItem.title}
                   </AccordionTrigger>
-                  <AccordionContent className='f-body-1'>
+                  <AccordionContent className='f-body-1 text-balance'>
                     {faqItem.description}
                   </AccordionContent>
                 </AccordionItem>

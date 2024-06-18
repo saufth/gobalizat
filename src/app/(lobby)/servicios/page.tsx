@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import { siteConfig } from '@/config/site'
 import { services } from '@/config/services'
+import { CallToAction } from '@/components/call-to-action'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -12,8 +13,8 @@ export const metadata: Metadata = {
 export default function ServicesPage () {
   return (
     <>
-      <section className='pt-spacing-7'>
-        <div className='container'>
+      <section className='-mt-nav-h'>
+        <div className='container pt-spacing-9'>
           <h1 className='f-heading-1 font-primary font-medium text-balance'>
             {services.description}
           </h1>
@@ -34,6 +35,9 @@ export default function ServicesPage () {
                       </p>
                     ))}
                   </div>
+                  <CallToAction className='mt-spacing-5'>
+                    Más información
+                  </CallToAction>
                 </div>
               </div>
               <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols bg-secondary order-1'>

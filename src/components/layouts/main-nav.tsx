@@ -19,7 +19,7 @@ export interface MenuProps {
 export default function MainNav ({ action, muted }: MenuProps) {
   return (
     <div className='cols-container gap-y-spacing-7'>
-      <div className='w-6-cols md:w-3-cols lg:w-5-cols flex flex-col gap-y-spacing-4 order-2 md:order-1'>
+      <div className='w-6-cols md:w-4-cols lg:w-6-cols flex flex-col gap-y-spacing-4 order-2 md:order-1'>
         <Link
           href={whatsappUrl(contactPhone)}
           onClick={action}
@@ -58,7 +58,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
         <SocialNav items={socialNav} action={action} muted />
       </div>
       <nav
-        className='w-6-cols md:w-5-cols lg:w-7-cols order-1 md:order-2'
+        className='w-6-cols md:w-4-cols lg:w-6-cols order-1 md:order-2'
         aria-label={`${siteConfig.name} directorio`}
       >
         <div className='cols-container gap-y-spacing-6'>
@@ -74,7 +74,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
                       href={navItem.href}
                       onClick={action}
                       aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg font-bold text-balance', muted && 'text-card-foreground')}
+                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
                     >
                       {navItem.title}
                     </Link>
@@ -95,7 +95,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
                       href={navItem.href}
                       onClick={action}
                       aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg font-bold text-balance', muted && 'text-card-foreground')}
+                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
                     >
                       {navItem.title}
                     </Link>
