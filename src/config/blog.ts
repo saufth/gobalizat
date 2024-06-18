@@ -9,6 +9,16 @@ export const blog = [
       height: 768
     },
     slug: '/blog/cambio-verdadero-en-alta-direccion-la-transformacion-integral',
+    author: {
+      name: 'Lorem ipsum dolor',
+      date: 'Jun 18, 2024',
+      image: {
+        src: '/images/profile-00.webp',
+        alt: 'Foto de perfil de ',
+        width: 512,
+        height: 512
+      }
+    },
     items: [
       {
         title: 'Transformar la manera de pensar',
@@ -50,6 +60,16 @@ export const blog = [
       height: 768
     },
     slug: '/blog/los-angulos-importantes-de-mexico-en-el-nearshoring',
+    author: {
+      name: 'Lorem ipsum dolor',
+      date: 'Jun 18, 2024',
+      image: {
+        src: '/images/profile-01.webp',
+        alt: 'Foto de perfil de ',
+        width: 512,
+        height: 512
+      }
+    },
     items: [
       {
         title: 'Desafíos de infraestructura',

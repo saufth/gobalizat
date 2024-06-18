@@ -19,6 +19,23 @@ export default function CambioVerdaderoEnAltaDireccionLaTransformacionIntegralPa
           <h1 className='f-display-3 font-primary font-bold text-balance'>
             {article.title}
           </h1>
+          <div className='flex gap-x-4 items-center mt-spacing-5'>
+            <Image
+              src={article.author.image.src}
+              alt={article.author.image.alt}
+              width={article.author.image.width}
+              height={article.author.image.height}
+              className='w-16 h-16 rounded-full'
+            />
+            <div>
+              <p className='f-subhead-3 text-card-foreground font-medium'>
+                {article.author.name}
+              </p>
+              <p className='f-subhead-3 text-muted-foreground'>
+                {article.author.date}
+              </p>
+            </div>
+          </div>
         </div>
         <div className='block md:hidden bg-primary mt-spacing-6'>
           <Image
