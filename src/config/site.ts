@@ -13,17 +13,6 @@ export const author: NextAuthor = {
   url: 'https://github.com/saufth'
 }
 
-export const homeNav: MainNavItem[] = [
-  {
-    title: 'Acerca de nosotros',
-    href: '/#nosotros'
-  },
-  {
-    title: 'Preguntas frecuentes',
-    href: '/#preguntas-frecuentes'
-  }
-]
-
 export const blogNav: MainNavItem[] = [
   ...blog.map((blogItem) => ({ title: blogItem.title, href: blogItem.slug }))
 ]
@@ -32,6 +21,14 @@ export const siteNav: MainNavItem[] = [
   {
     title: 'Nuestros servicios',
     href: '/servicios'
+  },
+  {
+    title: 'Acerca de nosotros',
+    href: '/#nosotros'
+  },
+  {
+    title: 'Preguntas frecuentes',
+    href: '/#preguntas-frecuentes'
   },
   {
     title: 'Ponte en contacto',
@@ -84,7 +81,6 @@ export const siteConfig: SiteConfig = {
       title: 'Página principal',
       href: '/'
     },
-    ...siteNav,
-    ...homeNav
+    ...siteNav
   ]
 }
