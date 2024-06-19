@@ -1,6 +1,5 @@
 import SocialNav from '@/components/layouts/social-nav'
 import { Link } from '@/components/ui/link'
-import { Icons } from '@/components/icons'
 import { cn, formatPhoneNumber, whatsappUrl } from '@/lib/utils'
 import {
   siteConfig,
