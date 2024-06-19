@@ -10,11 +10,11 @@ export const blog = [
     },
     slug: '/blog/cambio-verdadero-en-alta-direccion-la-transformacion-integral',
     author: {
-      name: 'Lorem ipsum dolor',
+      name: 'Leonardo Assenato',
       date: 'Jun 18, 2024',
       image: {
-        src: '/images/profile-00.webp',
-        alt: 'Foto de perfil de ',
+        src: '/images/profile-leonardo-assennato.webp',
+        alt: 'Foto de perfil de Leonardo Assenato',
         width: 512,
         height: 512
       }
@@ -61,11 +61,11 @@ export const blog = [
     },
     slug: '/blog/los-angulos-importantes-de-mexico-en-el-nearshoring',
     author: {
-      name: 'Lorem ipsum dolor',
+      name: 'Carlos Nova',
       date: 'Jun 18, 2024',
       image: {
-        src: '/images/profile-01.webp',
-        alt: 'Foto de perfil de ',
+        src: '/images/profile-carlos-nova.webp',
+        alt: 'Foto de perfil de Carlos Nova',
         width: 512,
         height: 512
       }

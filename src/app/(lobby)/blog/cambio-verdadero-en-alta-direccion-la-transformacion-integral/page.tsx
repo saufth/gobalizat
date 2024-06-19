@@ -25,13 +25,13 @@ export default function CambioVerdaderoEnAltaDireccionLaTransformacionIntegralPa
               alt={article.author.image.alt}
               width={article.author.image.width}
               height={article.author.image.height}
-              className='w-16 h-16 rounded-full'
+              className='w-12 sm:w-14 xl:w-16 h-12 sm:h-14 xl:h-16 rounded-full'
             />
             <div>
-              <p className='f-subhead-3 text-card-foreground font-medium'>
+              <p className='g-body-1 sm:f-subhead-3 text-card-foreground font-medium'>
                 {article.author.name}
               </p>
-              <p className='f-subhead-3 text-muted-foreground'>
+              <p className='text-sm sm:f-body-1 text-muted-foreground'>
                 {article.author.date}
               </p>
             </div>
