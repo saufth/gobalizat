@@ -10,6 +10,7 @@ import {
   address,
   blogNav
 } from '@/config/site'
+import Image from 'next/image'
 
 export interface MenuProps {
   action?: () => void
@@ -20,6 +21,18 @@ export default function MainNav ({ action, muted }: MenuProps) {
   return (
     <div className='cols-container gap-y-spacing-7'>
       <div className='w-6-cols md:w-4-cols lg:w-6-cols flex flex-col gap-y-spacing-4 order-2 md:order-1'>
+        <div className='flex items-center gap-x-3'>
+          <Image
+            src='/icons/flags/mexico-flag-icon.svg'
+            alt='Bandera de México'
+            width={900}
+            height={514.286}
+            className='w-auto h-5'
+          />
+          <div className='text-muted-foreground f-subhead-3 font-medium'>
+            México
+          </div>
+        </div>
         <Link
           href={whatsappUrl(contactPhone)}
           onClick={action}
@@ -31,7 +44,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
         >
           <Icons.WhatsappOutlined className={cn('w-auto h-6 lg:h-8', muted && 'stroke-card-foreground')} />
           <span className='sr-only'>Whatsapp{' '}</span>
-          {formatPhoneNumber(contactPhone)}
+          <span>+52 {formatPhoneNumber(contactPhone)}</span>
         </Link>
         <Link
           href={address.url}
@@ -44,6 +57,36 @@ export default function MainNav ({ action, muted }: MenuProps) {
         >
           {address.name}
         </Link>
+        <div className='flex items-center gap-x-3 mt-spacing-4'>
+          <Image
+            src='/icons/flags/colombia-flag-icon.svg'
+            alt='Bandera de Colombia'
+            width={900}
+            height={514.286}
+            className='w-auto h-5'
+          />
+          <div className='text-muted-foreground f-subhead-3 font-medium'>
+            Colombia
+          </div>
+        </div>
+        <Link
+          href={whatsappUrl('3017753104')}
+          onClick={action}
+          aria-label='Whatsapp de atención al cliente, se abre en una nueva pestaña'
+          target='_blank'
+          size='xl'
+          rel='noreferrer'
+          className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
+        >
+          <Icons.WhatsappOutlined className={cn('w-auto h-6 lg:h-8', muted && 'stroke-card-foreground')} />
+          <span className='sr-only'>Whatsapp{' '}</span>
+          <span>+57 {formatPhoneNumber('3017753104')}</span>
+        </Link>
+        <div
+          className={cn('w-fit text-balance f-subhead-1 font-medium', muted && 'text-card-foreground')}
+        >
+          Medellín-Antioquia-Colombia
+        </div>
         <Link
           href={`mailto:${contactEmail}`}
           onClick={action}
@@ -51,7 +94,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
           target='_blank'
           rel='noreferrer'
           size='xl'
-          className={cn('w-fit', muted && 'text-card-foreground')}
+          className={cn('w-fit mt-spacing-4', muted && 'text-card-foreground')}
         >
           {contactEmail}
         </Link>
