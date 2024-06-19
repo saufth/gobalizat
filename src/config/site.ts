@@ -76,7 +76,7 @@ export const address: NavItemExternal = {
 export const siteConfig: SiteConfig = {
   name: 'GlobalizaT',
   slogan: 'Transformamos tu potencial en exito global',
-  description: 'Proporcionamos soluciones integrales y de alta calidad en consultoría legal, logística internacional, asesoría comercial, promoción de inversiones y representación de marcas extranjeras.',
+  description: 'Proporcionamos soluciones integrales y de alta calidad en consultoría legal, logística internacional, asesoría comercial y representación de marcas extranjeras.',
   url: `https://${domain}`,
   author,
   mainNav: [

@@ -5,7 +5,7 @@ export const aboutUs = {
     {
       title: 'Nuestra misión',
       description: [
-        'Transformar el potencial de las empresas de México y Latinoamérica en éxito global, proporcionando soluciones integrales y de alta calidad en consultoría legal, logística internacional, asesoría comercial, promoción de inversiones y representación de marcas extranjeras.',
+        'Transformar el potencial de las empresas de México y Latinoamérica en éxito global, proporcionando soluciones integrales y de alta calidad en consultoría legal, logística internacional, asesoría comercial y representación de marcas extranjeras.',
         'Nos comprometemos a acompañar a nuestros clientes en cada etapa de sus proyectos, garantizando cumplimiento normativo, optimización de recursos y decisiones informadas que impulsen su crecimiento y competitividad internacional.'
       ],
       image: {
