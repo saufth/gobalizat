@@ -42,8 +42,6 @@ export default function MainNav ({ action, muted }: MenuProps) {
           rel='noreferrer'
           className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
         >
-          <Icons.WhatsappOutlined className={cn('w-auto h-6 lg:h-8', muted && 'stroke-card-foreground')} />
-          <span className='sr-only'>Whatsapp{' '}</span>
           <span>+52 {formatPhoneNumber(contactPhone)}</span>
         </Link>
         <Link
@@ -78,8 +76,6 @@ export default function MainNav ({ action, muted }: MenuProps) {
           rel='noreferrer'
           className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
         >
-          <Icons.WhatsappOutlined className={cn('w-auto h-6 lg:h-8', muted && 'stroke-card-foreground')} />
-          <span className='sr-only'>Whatsapp{' '}</span>
           <span>+57 {formatPhoneNumber('3017753104')}</span>
         </Link>
         <div
