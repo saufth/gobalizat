@@ -112,7 +112,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
                       href={navItem.href}
                       onClick={action}
                       aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
+                      className={cn('text-base sm:text-lg text-balance font-medium', muted && 'text-card-foreground')}
                     >
                       {navItem.title}
                     </Link>
@@ -133,7 +133,7 @@ export default function MainNav ({ action, muted }: MenuProps) {
                       href={navItem.href}
                       onClick={action}
                       aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
+                      className={cn('text-base sm:text-lg text-balance font-medium', muted && 'text-card-foreground')}
                     >
                       {navItem.title}
                     </Link>
