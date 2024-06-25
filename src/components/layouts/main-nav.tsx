@@ -1,120 +1,101 @@
+import Image from 'next/image'
 import SocialNav from '@/components/layouts/social-nav'
 import { Link } from '@/components/ui/link'
-import { cn, formatPhoneNumber, whatsappUrl } from '@/lib/utils'
+import { cn, formatPhoneNumber } from '@/lib/utils'
 import {
   siteConfig,
   contactEmail,
   socialNav,
-  contactPhone,
-  address,
+  contact,
   blogNav
 } from '@/config/site'
-import Image from 'next/image'
 
-export interface MenuProps {
+export interface MainNavProps {
   action?: () => void
   muted?: boolean
 }
 
-export default function MainNav ({ action, muted }: MenuProps) {
+export default function MainNav ({ action, muted }: MainNavProps) {
   return (
     <div className='cols-container gap-y-spacing-7'>
-      <div className='w-6-cols md:w-4-cols lg:w-6-cols flex flex-col gap-y-spacing-4 order-2 md:order-1'>
-        <div className='flex items-center gap-x-3'>
-          <Image
-            src='/icons/flags/mexico-flag-icon.svg'
-            alt='Bandera de México'
-            width={900}
-            height={514.286}
-            className='w-auto h-5'
-          />
-          <div className='text-muted-foreground f-subhead-3 font-medium'>
-            México
+      <div className='w-6-cols md:w-5-cols lg:w-6-cols space-y-spacing-5 order-2 md:order-1'>
+        {contact.map((contactItem, contactItemKey) => (
+          <div className='flex flex-col gap-y-spacing-3' key={`contact-item-${contactItemKey}`}>
+            <div className='flex items-center gap-x-3'>
+              <Image
+                src={`/icons/flags/${contactItem.country}.svg`}
+                alt={`Bandera de ${contactItem.country}`}
+                width={900}
+                height={514.286}
+                className='w-auto h-4 lg:h-[18px] xl:h-5'
+              />
+              <div className='text-muted-foreground f-body-1'>
+                {contactItem.country}
+              </div>
+            </div>
+            <Link
+              href={`tel:${contactItem.phone.fullNumber}`}
+              onClick={action}
+              aria-label={`Número de atención a clientes ${contactItem.country}`}
+              title='Llamar ahora'
+              target='_blank'
+              size='lg'
+              rel='noreferrer'
+              className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
+            >
+              <span className='font-normal'>{`+${contactItem.phone.code} ${formatPhoneNumber(contactItem.phone.number)}`}</span>
+            </Link>
+            <Link
+              href={contactItem.address.url}
+              onClick={action}
+              aria-label='Abre la ubicación del corporativo en Google Maps, se abre en una nueva pestaña o en tu aplicación de mapas predeterminada'
+              title='Ver ubicación en Google Maps'
+              target='_blank'
+              size='lg'
+              rel='noreferrer'
+              className={cn('w-fit text-balance font-normal', muted && 'text-card-foreground')}
+            >
+              {contactItem.address.name}
+            </Link>
           </div>
+        ))}
+        <div className='flex flex-col gap-y-spacing-3'>
+          <Link
+            href={`mailto:${contactEmail}`}
+            onClick={action}
+            aria-label='Envía un mensaje con tu servicio de correo, se abre en una nueva pestaña o en tu cliente de correo predeterminado'
+            title='Enviar correo ahora'
+            target='_blank'
+            rel='noreferrer'
+            size='lg'
+            className={cn('w-fit font-normal', muted && 'text-card-foreground')}
+          >
+            {contactEmail}
+          </Link>
+          <SocialNav items={socialNav} action={action} muted />
         </div>
-        <Link
-          href={whatsappUrl(contactPhone)}
-          onClick={action}
-          aria-label='Whatsapp de atención al cliente, se abre en una nueva pestaña'
-          target='_blank'
-          size='xl'
-          rel='noreferrer'
-          className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
-        >
-          <span>+52 {formatPhoneNumber(contactPhone)}</span>
-        </Link>
-        <Link
-          href={address.url}
-          onClick={action}
-          aria-label='Abre la ubicación del corporativo en Google Maps, se abre en una nueva pestaña o en tu aplicación de mapas predeterminada'
-          target='_blank'
-          size='xl'
-          rel='noreferrer'
-          className={cn('w-fit text-balance', muted && 'text-card-foreground')}
-        >
-          {address.name}
-        </Link>
-        <div className='flex items-center gap-x-3 mt-spacing-4'>
-          <Image
-            src='/icons/flags/colombia-flag-icon.svg'
-            alt='Bandera de Colombia'
-            width={900}
-            height={514.286}
-            className='w-auto h-5'
-          />
-          <div className='text-muted-foreground f-subhead-3 font-medium'>
-            Colombia
-          </div>
-        </div>
-        <Link
-          href={whatsappUrl('3017753104')}
-          onClick={action}
-          aria-label='Whatsapp de atención al cliente, se abre en una nueva pestaña'
-          target='_blank'
-          size='xl'
-          rel='noreferrer'
-          className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
-        >
-          <span>+57 {formatPhoneNumber('3017753104')}</span>
-        </Link>
-        <div
-          className={cn('w-fit text-balance f-subhead-1 font-medium', muted && 'text-card-foreground')}
-        >
-          Medellín-Antioquia-Colombia
-        </div>
-        <Link
-          href={`mailto:${contactEmail}`}
-          onClick={action}
-          aria-label='Envía un mensaje con tu servicio de correo, se abre en una nueva pestaña o en tu cliente de correo predeterminado'
-          target='_blank'
-          rel='noreferrer'
-          size='xl'
-          className={cn('w-fit mt-spacing-4', muted && 'text-card-foreground')}
-        >
-          {contactEmail}
-        </Link>
-        <SocialNav items={socialNav} action={action} muted />
       </div>
       <nav
-        className='w-6-cols md:w-4-cols lg:w-6-cols order-1 md:order-2'
+        className='w-6-cols md:w-3-cols lg:w-6-cols order-1 md:order-2'
         aria-label={`${siteConfig.name} directorio`}
       >
         <div className='cols-container gap-y-spacing-6'>
-          <div className='w-6-cols sm:w-4-cols lg:w-6-cols'>
-            <div className='text-lg sm:text-xl text-muted-foreground font-medium'>
+          <div className='w-6-cols sm:w-4-cols md:w-8-cols lg:w-6-cols'>
+            <div className='text-lg sm:text-xl text-muted-foreground'>
               Navegación
             </div>
             <ul className='space-y-spacing-3 mt-spacing-4'>
-              {siteConfig.mainNav.map((navItem, key) => {
-                return navItem.title !== 'Soluciones' && (
-                  <li key={key}>
+              {siteConfig.mainNav.map((mainNavItem, mainNavItemKey) => {
+                return mainNavItem.title !== 'Soluciones' && (
+                  <li key={`nav-item-${mainNavItemKey}`}>
                     <Link
-                      href={navItem.href}
+                      href={mainNavItem.href}
                       onClick={action}
-                      aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg text-balance font-medium', muted && 'text-card-foreground')}
+                      aria-label={mainNavItem.title}
+                      title={`Ir a página ${mainNavItem.title}`}
+                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
                     >
-                      {navItem.title}
+                      {mainNavItem.title}
                     </Link>
                   </li>
                 )
@@ -122,20 +103,21 @@ export default function MainNav ({ action, muted }: MenuProps) {
             </ul>
           </div>
           <div className='w-6-cols sm:w-4-cols lg:w-6-cols'>
-            <div className='text-lg sm:text-xl text-muted-foreground font-medium'>
+            <div className='text-lg sm:text-xl text-muted-foreground'>
               Blog
             </div>
             <ul className='space-y-spacing-3 mt-spacing-4'>
-              {blogNav.map((navItem, key) => {
-                return navItem.title !== 'Soluciones' && (
-                  <li key={key}>
+              {blogNav.map((blogNavItem, blogNavItemKey) => {
+                return blogNavItem.title !== 'Soluciones' && (
+                  <li key={`nav-item-${blogNavItemKey}`}>
                     <Link
-                      href={navItem.href}
+                      href={blogNavItem.href}
                       onClick={action}
-                      aria-label={navItem.title}
-                      className={cn('text-base sm:text-lg text-balance font-medium', muted && 'text-card-foreground')}
+                      aria-label={blogNavItem.title}
+                      title={`Ir a articulo ${blogNavItem.title}`}
+                      className={cn('text-base sm:text-lg text-balance', muted && 'text-card-foreground')}
                     >
-                      {navItem.title}
+                      {blogNavItem.title}
                     </Link>
                   </li>
                 )

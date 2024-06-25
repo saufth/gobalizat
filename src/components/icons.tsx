@@ -961,6 +961,46 @@ export const Icons = {
       </svg>
     )
   },
+  Arrow: (props: IconProps) => {
+    return (
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width={26.16217}
+        height={17.965179}
+        viewBox='0 0 26.16217 17.965179'
+        fill='currentColor'
+        {...props}
+      >
+        <g transform='translate(-75.960572,-114.18199)'>
+          <g>
+            <rect
+              width='6.784863'
+              height='0.26458332'
+              x='75.960579'
+              y='-116.68923'
+              transform='scale(1,-1)'
+            />
+            <g>
+              <rect
+                width='3.3605189'
+                height='0.26458332'
+                x='137.66548'
+                y='23.812241'
+                transform='rotate(45)'
+              />
+              <rect
+                width='3.3605189'
+                height='0.26458332'
+                x='-27.173321'
+                y='-141.02657'
+                transform='matrix(0.70710678,-0.70710678,-0.70710678,-0.70710678,0,0)'
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
+    )
+  },
   Sun: (props: IconProps) => {
     return (
       <svg

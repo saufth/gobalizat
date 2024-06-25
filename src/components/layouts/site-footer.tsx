@@ -10,9 +10,9 @@ export default function SiteFooter () {
           <MainNav muted />
         </div>
         <div className='pb-spacing-4 flex flex-col gap-y-spacing-4 md:flex-row justify-between'>
-          <div className='flex items-center gap-x-2 md:pt-1 lg:pt-2 order-2 md:order-1'>
-            <Icons.Logotype className='w-auto h-9 [&_path]:fill-muted-foreground dark:[&_path]:fill-muted-foreground [&_*]:stroke-muted-foreground' />
-            <span className='pt-2 text-muted-foreground text-lg font-primary font-medium'>
+          <div className='flex items-center gap-x-spacing-1 md:pt-1 lg:pt-2 order-2 md:order-1'>
+            <Icons.Logotype className='w-auto h-7 md:h-8 lg:h-9 [&_path]:fill-muted-foreground dark:[&_path]:fill-muted-foreground [&_*]:stroke-muted-foreground' />
+            <span className='pt-2 text-muted-foreground text-sm md:text-base lg:text-lg font-primary font-semibold'>
               {`© ${new Date().getFullYear()}`}
             </span>
           </div>

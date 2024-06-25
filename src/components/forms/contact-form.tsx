@@ -17,7 +17,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { PaperPlaneIcon } from '@radix-ui/react-icons'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { type Inputs, contactEmailSchema } from '@/lib/validations/email'
+import { type Inputs, emailSchema } from '@/lib/validations/email'
 
 const recaptchaSitekey = String(process.env.NEXT_PUBLIC_GRECAPTCHA)
 
@@ -25,7 +25,7 @@ export default function ContactForm () {
   const [isPending, startTransition] = React.useTransition()
 
   const form = useForm<Inputs>({
-    resolver: zodResolver(contactEmailSchema),
+    resolver: zodResolver(emailSchema),
     defaultValues: {
       name: '',
       email: '',

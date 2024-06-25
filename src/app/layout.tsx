@@ -5,7 +5,7 @@ import ThemeProvider from '@/components/layouts/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import GoogleSearchScript from '@/components/layouts/google-seacrch-script'
 import { cn } from '@/lib/utils'
-import { fontPrimary, fontSans } from '@/lib/fonts'
+import { fontPrimary, fontSans, fontHeader } from '@/lib/fonts'
 import { services } from '@/config/services'
 import { siteConfig } from '@/config/site'
 import '@/styles/globals.css'
@@ -59,6 +59,7 @@ export default function RootLayout ({ children }: PropsWithChildren) {
       className={cn(
         fontSans.variable,
         fontPrimary.variable,
+        fontHeader.variable,
         'font-sans antialiased !scroll-smooth'
       )}
     >

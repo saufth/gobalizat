@@ -1,12 +1,10 @@
 import { Author as NextAuthor } from 'next/dist/lib/metadata/types/metadata-types'
-import { whatsappUrl } from '@/lib/utils'
+import { blog } from '@/config/blog'
 import type {
   SiteConfig,
   MainNavItem,
-  NavItem,
-  NavItemExternal
+  NavItem
 } from '@/types'
-import { blog } from './blog'
 
 export const author: NextAuthor = {
   name: 'saufth',
@@ -40,7 +38,32 @@ export const domain = 'globalizat.com'
 
 export const contactEmail = `contacto@${domain}`
 
-export const contactPhone = '4422714413'
+export const contact = [
+  {
+    country: 'México',
+    phone: {
+      number: '4422714413',
+      code: '+52',
+      fullNumber: '+524422714413'
+    },
+    address: {
+      name: 'José María Truchuelo 16, Cimatario, 76030 Santiago de Querétaro, Qro.',
+      url: 'https://maps.app.goo.gl/Gtjf5kqQ1YAwRS3v8'
+    }
+  },
+  {
+    country: 'Colombia',
+    phone: {
+      number: '3017753104',
+      code: '+57',
+      fullNumber: '+573017753104'
+    },
+    address: {
+      name: 'Medellín-Antioquia-Colombia',
+      url: 'https://maps.app.goo.gl/6G93YyqtL2YzYNLZ6'
+    }
+  }
+]
 
 export const socialNav: NavItem[] = [
   {
@@ -58,17 +81,8 @@ export const socialNav: NavItem[] = [
   {
     title: 'linkedin',
     href: '#'
-  },
-  {
-    title: 'whatsapp',
-    href: whatsappUrl(contactPhone)
   }
 ]
-
-export const address: NavItemExternal = {
-  name: 'José María Truchuelo 16, Cimatario, 76030 Santiago de Querétaro, Qro.',
-  url: 'https://maps.app.goo.gl/Gtjf5kqQ1YAwRS3v8'
-}
 
 export const siteConfig: SiteConfig = {
   name: 'GlobalizaT',

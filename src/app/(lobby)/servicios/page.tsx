@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 export default function ServicesPage () {
   return (
     <>
-      <section className='-mt-nav-h'>
+      <section className='-mt-header-h'>
         <div className='container pt-spacing-9'>
-          <h1 className='f-heading-1 font-primary font-medium text-balance'>
+          <h1 className='f-heading-1 font-header font-medium text-balance'>
             {services.description}
           </h1>
         </div>
@@ -25,7 +25,7 @@ export default function ServicesPage () {
             <article className='cols-container even:flex-row-reverse' key={key}>
               <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols mt-spacing-4 md:mt-0 order-2 lg:px-spacing-3'>
                 <div className='sm:max-w-lg'>
-                  <h3 className='f-heading-2 text-balance'>
+                  <h3 className='f-heading-2 font-header text-balance'>
                     {serviceItem.title}
                   </h3>
                   <div className='space-y-spacing-3 mt-spacing-4'>

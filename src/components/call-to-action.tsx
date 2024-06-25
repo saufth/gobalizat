@@ -1,4 +1,5 @@
 import { type ComponentProps } from 'react'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 import { Button, type ButtonVariantProps } from '@/components/ui/button'
 import NextLink from '@/components/ui/next-link'
 import { cn } from '@/lib/utils'
@@ -32,7 +33,7 @@ export const CallToAction = (
       size={size}
       variant={variant}
       className={cn(
-        'lg:font-medium text-sm lg:text-lg tracking-wide',
+        'text-sm lg:text-lg tracking-wide flex items-center gap-x-spacing-3',
         className
       )}
     >
@@ -41,6 +42,7 @@ export const CallToAction = (
         onClick={onClick}
       >
         {children || siteRoutes[to]?.title}
+        <ArrowRightIcon className='[&_*]:fill-accent-foreground w-auto h-4 sm:h-5' />
       </NextLink>
     </Button>
   )

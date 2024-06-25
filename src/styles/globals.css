@@ -17,7 +17,7 @@
     --secondary-foreground: 0% 0 0; /* #000000 */
     --muted: 96.76% 0.001 286.38; /* #F4F4F5 */
     --muted-foreground: 55.2% 0.014 285.93; /* #71717A  */
-    --accent: 57.86% 0.198 26.52; /* #D63533 */
+    --accent: 52.14% 0.175 26.7; /* #B92F2C */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 63.68% 0.208 25.33; /* #EF4444 */
     --destructive-foreground: 98.48% 0 0; /* #FAFAFA */
@@ -57,7 +57,7 @@
     --secondary-foreground: 100% 0 0; /* #FFFFFF */
     --muted: 27.41% 0.005 286.03; /* #27272A */
     --muted-foreground: 71.19% 0.013 286.07; /* #A1A1AA */
-    --accent: 57.86% 0.198 26.52; /* #D63533 */
+    --accent: 52.14% 0.175 26.7; /* #B92F2C */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 39.59% 0.133 25.72; /* #7F1D1D */
     --destructive-foreground: 98.48% 0 0; /* #FAFAFA */
@@ -162,27 +162,27 @@
   /* Typography */
 
   .f-display-1 {
-    @apply text-5xl sm:text-7xl xl:text-8xl leading-[110%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-5xl sm:text-7xl xl:text-8xl leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-tight;
   }
 
   .f-display-2 {
-    @apply text-[2.5rem] sm:text-[3.125rem] xl:text-[4rem] leading-[110%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[2.5rem] sm:text-[3.125rem] xl:text-[4rem] leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-[0.15];
   }
 
   .f-display-3 {
-    @apply text-[2rem] sm:text-[2.625rem] xl:text-[3.8rem] leading-[110%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[2rem] sm:text-[2.625rem] xl:text-[3.8rem] leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-[0.15];
   }
 
   .f-heading-1 {
-    @apply text-[1.8rem] sm:text-[2.5rem] xl:text-[3.2rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.8rem] sm:text-[2.5rem] xl:text-[3.2rem] leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-[0.15];
   }
 
   .f-heading-2 {
-    @apply text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-[0.15];
   }
 
   .f-heading-3 {
-    @apply text-[1.4rem] md:text-[1.75rem] xl:text-[2rem] leading-[120%] sm:leading-[120%] xl:leading-[130%];
+    @apply text-[1.4rem] md:text-[1.75rem] xl:text-[2rem] leading-[110%] sm:leading-[125%] xl:leading-[120%] tracking-[0.15];
   }
 
   .f-subhead-1 {
@@ -219,8 +219,14 @@
     @apply h-[100svh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px];
   }
 
-  .-mt-nav-h {
-    @apply -mt-[75px] lg:-mt-[97px];
+  /* Site header */
+
+  .h-header {
+    @apply h-[70px] lg:h-20;
+  }
+
+  .-mt-header-h {
+    @apply -mt-[71px] lg:-mt-[81px];
   }
 }
 

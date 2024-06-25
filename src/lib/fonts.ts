@@ -30,3 +30,9 @@ export const fontPrimary = localFont({
   display: 'swap',
   variable: '--font-primary'
 })
+
+export const fontHeader = localFont({
+  src: '../../public/fonts/header-regular.woff2',
+  display: 'swap',
+  variable: '--font-header'
+})

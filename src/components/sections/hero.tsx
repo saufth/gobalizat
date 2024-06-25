@@ -17,24 +17,22 @@ export const Hero = ({ title, description, to, src, children, className }: HeroP
   return (
     <section
       className={cn(
-        'screen-container relative overflow-hidden -mt-nav-h',
+        'screen-container relative overflow-hidden -mt-header-h',
         className
       )}
     >
       <div className='container h-full flex flex-col justify-center relative z-10 pt-spacing-6'>
-        <div className='max-w-md sm:max-w-2xl lg:max-w-3xl'>
-          <div className='space-y-spacing-4'>
-            <h1 className='f-display-2 font-primary font-bold text-white text-balance'>
-              {title}
-            </h1>
-            {description && (
-              <p className='f-subhead-3 text-balance text-white'>
-                {description}
-              </p>
-            )}
-          </div>
+        <div className='max-w-md sm:max-w-2xl lg:max-w-3xl space-y-spacing-4'>
+          <h1 className='f-display-2 font-header text-white text-balance'>
+            {title}
+          </h1>
+          {description && (
+            <p className='f-subhead-3 font-header text-balance text-white'>
+              {description}
+            </p>
+          )}
           {to && (
-            <CallToAction to={to} className='mt-spacing-5' />
+            <CallToAction to={to} />
           )}
         </div>
         {children}

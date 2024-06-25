@@ -19,7 +19,7 @@ export function BackgroundVideo ({ src }: BackgroundVideoProps) {
       >
         <source src={src} type='video/mp4' />
       </video>
-      <div className='absolute inset-0 bg-black/50 z-10' />
+      <div className='absolute inset-0 bg-black/60 z-10' />
     </div>
   )
 }

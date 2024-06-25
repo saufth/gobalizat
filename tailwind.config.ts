@@ -47,7 +47,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
-        primary: ['var(--font-primary)', ...fontFamily.serif]
+        primary: ['var(--font-primary)', ...fontFamily.sans],
+        header: ['var(--font-header)', ...fontFamily.sans]
       },
       colors: {
         primary: {

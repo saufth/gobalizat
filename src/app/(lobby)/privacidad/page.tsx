@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import { Link } from '@/components/ui/link'
-import { siteConfig, contactEmail, address } from '@/config/site'
+import { siteConfig, contactEmail, contact } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -150,7 +150,7 @@ export default function PrivacyPage () {
                 Las preguntas sobre esta Política de privacidad y las solicitudes de acceso deben dirigirse a:
               </p>
               <p>
-                <b>{siteConfig.name}</b>, <Link href={address.url}>{address.name}</Link> O
+                <b>{siteConfig.name}</b>, <Link href={contact[0]!.address.url}>{contact[0]!.address.name}</Link> O
                 al correo: <Link href={`mailto:${contactEmail}`}>{contactEmail}</Link>
               </p>
               <p>

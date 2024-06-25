@@ -60,8 +60,8 @@ export default function SiteHeader () {
       >
         <nav aria-label={`${siteConfig.name} directory`}>
           <div className='container relative z-10'>
-            <div className='w-full h-[74px] lg:h-24 flex justify-between items-center'>
-              <div className='h-12 lg:h-16'>
+            <div className='w-full h-header flex justify-between items-center'>
+              <div className='h-10 lg:h-[50px]'>
                 <NextLink href='/' onClick={closeMenu}>
                   <Icons.Logotype
                     className={cn(

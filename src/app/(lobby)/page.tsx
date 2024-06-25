@@ -60,20 +60,16 @@ export default function IndexPage () {
       </section>
       <section id='nosotros'>
         <div className='container pt-spacing-8'>
-          <div className='space-y-spacing-3'>
-            <h2 className='text-xs sm:text-sm xl:text-base uppercase text-muted-foreground text-balance font-medium'>
-              {aboutUs.title}
-            </h2>
-            <p className='f-heading-1 text-balance'>
-              {aboutUs.description}
-            </p>
-          </div>
+          <SectionHeader
+            title={aboutUs.title}
+            description={aboutUs.description}
+          />
           <div className='space-y-spacing-6 mt-spacing-6'>
             {aboutUs.items.map((aboutUsItem, key) => (
               <article className='cols-container even:flex-row-reverse' key={key}>
                 <div className='w-6-cols sm:w-8-cols md:w-4-cols lg:w-6-cols mt-spacing-4 md:mt-0 order-2 lg:px-spacing-3'>
                   <div className='sm:max-w-lg'>
-                    <h3 className='f-heading-2 text-balance'>
+                    <h3 className='f-heading-2 font-header text-balance'>
                       {aboutUsItem.title}
                     </h3>
                     <div className='space-y-spacing-3 mt-spacing-4'>
@@ -121,14 +117,14 @@ export default function IndexPage () {
                       />
                     </CardContent>
                     <CardHeader>
-                      <CardTitle>
+                      <CardTitle className='font-header'>
                         {blogItem.title}
                       </CardTitle>
                       <CardDescription>
                         {blogItem.description}
                       </CardDescription>
                       <div className='pt-spacing-4'>
-                        <div className='f-subhead-3 font-semibold group-hover:underline flex items-center gap-x-2'>
+                        <div className='f-body-1 group-hover:underline flex items-center gap-x-2'>
                           Ver articulo
                           <ArrowRightIcon />
                         </div>
@@ -154,11 +150,11 @@ export default function IndexPage () {
                   <AccordionTrigger className='f-subhead-3 text-left text-balance pt-0 pb-spacing-4'>
                     {faqItem.title}
                   </AccordionTrigger>
-                  <AccordionContent className='f-body-1 text-balance pb-spacing-4'>
+                  <AccordionContent className='f-body-1 text-balance pb-spacing-4 text-muted-foreground'>
                     {typeof faqItem.description === 'string'
                       ? faqItem.description
                       : (
-                        <div className='space-y-spacing-3'>
+                        <div className='space-y-spacing-3 text-muted-foreground'>
                           {faqItem.description.map((descriptionItem, key) => (
                             <div key={key}>
                               {descriptionItem}
