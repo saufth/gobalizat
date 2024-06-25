@@ -1,18 +1,18 @@
 import nodemailer from 'nodemailer'
 import { z } from 'zod'
 import { contactEmailSchema } from '@/lib/validations/email'
-import { siteConfig, contactEmail, domain } from '@/config/site'
+import { siteConfig, contactEmail } from '@/config/site'
 
 export async function POST (req: Request) {
   const input = contactEmailSchema.parse(await req.json())
 
   try {
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: 'mail.globalizat.com',
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: `noreply@${domain}`,
+        user: contactEmail,
         pass: String(process.env.GAPP)
       }
     })

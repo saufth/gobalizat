@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import SocialNav from '@/components/layouts/social-nav'
+// import SocialNav from '@/components/layouts/social-nav'
 import { Link } from '@/components/ui/link'
 import { cn, formatPhoneNumber } from '@/lib/utils'
 import {
   siteConfig,
   contactEmail,
-  socialNav,
+  // socialNav,
   contact,
   blogNav
 } from '@/config/site'
@@ -72,7 +72,7 @@ export default function MainNav ({ action, muted }: MainNavProps) {
           >
             {contactEmail}
           </Link>
-          <SocialNav items={socialNav} action={action} muted />
+          {/* <SocialNav items={socialNav} action={action} muted /> */}
         </div>
       </div>
       <nav
