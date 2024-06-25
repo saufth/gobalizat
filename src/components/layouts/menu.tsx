@@ -1,9 +1,9 @@
 'use client'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import MainNav, { type MenuProps } from '@/components/layouts/main-nav'
+import MainNav, { type MainNavProps } from '@/components/layouts/main-nav'
 
-export default function Menu (props: MenuProps) {
+export default function Menu (props: MainNavProps) {
   useEffect(() => {
     const documentBody = document.body
     const documentWidth = document.documentElement.clientWidth
