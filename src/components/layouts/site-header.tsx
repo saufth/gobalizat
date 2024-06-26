@@ -24,7 +24,7 @@ export default function SiteHeader () {
     if (typeof current === 'number') {
       const direction = current - scrollYProgress.getPrevious()!
 
-      if (scrollYProgress.get() < 0.03) {
+      if (scrollYProgress.get() < 0.01) {
         setVisible(true)
         setIsOnTop(true)
       } else {
@@ -47,11 +47,11 @@ export default function SiteHeader () {
         }}
         animate={{
           y: visible || isMenuOpen ? 0 : -100,
-          backgroundColor: isOnTop || isMenuOpen ? 'oklch(var(--background)/0)' : 'oklch(var(--background)/0.9)',
-          backdropFilter: isOnTop || isMenuOpen
+          backgroundColor: isOnTop && !isMenuOpen ? 'oklch(var(--background)/0)' : 'oklch(var(--background)/0.9)',
+          backdropFilter: isOnTop && !isMenuOpen
             ? 'none'
             : 'var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)',
-          borderColor: isOnTop || isMenuOpen ? 'oklch(var(--border)/0)' : 'oklch(var(--border)/1)'
+          borderColor: isOnTop && !isMenuOpen ? 'oklch(var(--border)/0)' : 'oklch(var(--border)/1)'
         }}
         transition={{
           duration: 0.5
