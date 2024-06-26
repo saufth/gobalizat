@@ -46,7 +46,7 @@ export function ModeToggle ({ className }: ModeToggleProps) {
           delay: theme === 'light' ? 0.25 : 0,
           ...transitionConfig
         }}
-        className='h-auto w-6 scale-0'
+        className='h-auto w-[22px] sm:w-6 scale-0'
       >
         <title>Cambiar a modo oscuro</title>
         <path
@@ -81,7 +81,7 @@ export function ModeToggle ({ className }: ModeToggleProps) {
           delay: theme === 'dark' ? 0.25 : 0,
           ...transitionConfig
         }}
-        className='absolute top-0 h-auto w-6 scale-0'
+        className='absolute top-0 h-auto w-[22px] xl:w-6 scale-0'
       >
         <title>Cambiar a modo calro</title>
         <path

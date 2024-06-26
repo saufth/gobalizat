@@ -222,11 +222,11 @@
   /* Site header */
 
   .h-header {
-    @apply h-[70px] lg:h-20;
+    @apply h-16 sm:h-[72px] xl:h-20;
   }
 
   .-mt-header-h {
-    @apply -mt-[71px] lg:-mt-[81px];
+    @apply -mt-[65px] sm:-mt-[73px] xl:-mt-[81px];
   }
 }
 

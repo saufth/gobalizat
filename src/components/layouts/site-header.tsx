@@ -61,7 +61,7 @@ export default function SiteHeader () {
         <nav aria-label={`${siteConfig.name} directory`}>
           <div className='container relative z-10'>
             <div className='w-full h-header flex justify-between items-center'>
-              <div className='h-10 lg:h-[50px]'>
+              <div className='h-10 sm:h-12 xl:h-[54px]'>
                 <NextLink href='/' onClick={closeMenu}>
                   <Icons.Logotype
                     className={cn(
@@ -72,9 +72,9 @@ export default function SiteHeader () {
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </NextLink>
               </div>
-              <div className='flex items-center gap-x-6'>
+              <div className='flex items-center gap-x-spacing-4'>
                 <ModeToggle className={(pathname === '/' && isOnTop && !isMenuOpen) ? '[&_svg]:fill-white' : ''} />
-                <button className='w-9 h-2.5 relative' onClick={toggleMenu}>
+                <button className='w-9 h-2.5 relative scale-90 sm:scale-100' onClick={toggleMenu}>
                   <motion.span
                     initial={{
                       backgroundColor: 'oklch(100% 0 0)',

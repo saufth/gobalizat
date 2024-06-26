@@ -33,7 +33,7 @@ export const CallToAction = (
       size={size}
       variant={variant}
       className={cn(
-        'text-sm lg:text-lg tracking-wide flex items-center gap-x-spacing-3',
+        'font-header tracking-wide flex items-center gap-x-spacing-3',
         className
       )}
     >
@@ -42,7 +42,7 @@ export const CallToAction = (
         onClick={onClick}
       >
         {children || siteRoutes[to]?.title}
-        <ArrowRightIcon className='[&_*]:fill-accent-foreground w-auto h-4 sm:h-5' />
+        <ArrowRightIcon className='[&_*]:fill-accent-foreground w-auto h-4 sm:h-5 -rotate-45' />
       </NextLink>
     </Button>
   )
