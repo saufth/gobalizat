@@ -18,7 +18,7 @@ export async function POST (req: Request) {
     })
 
     await transporter.sendMail({
-      from: siteConfig.name,
+      from: `${siteConfig.name}`,
       to: input.email,
       subject: `${input.name}, hemos recibido tu mensaje en ${siteConfig.name}`,
       html: `
@@ -28,7 +28,7 @@ export async function POST (req: Request) {
     })
 
     await transporter.sendMail({
-      from: siteConfig.name,
+      from: `${siteConfig.name} ${contactEmail}`,
       to: contactEmail,
       subject: 'Nuevo mensaje desde formulario web',
       html: `
