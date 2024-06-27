@@ -5,42 +5,47 @@ interface Limits {
   max: number
 }
 
-const limitsErrorMessage = ({ min, max }: Limits) => {
-  return min === max
-    ? `Debe tener ${min} caracteres`
-    : `Debe tener de ${min} a ${max} caracteres`
+const createLimitErrorMessage = ({ min, max }: Limits) => {
+  return {
+    message: min === max
+      ? `Debe tener ${min} caracteres`
+      : `Debe tener de ${min} a ${max} caracteres`
+  }
 }
 
 const nameLimits: Limits = { min: 6, max: 80 }
-const nameLimitsErrorMessage = limitsErrorMessage(nameLimits)
-
 const phoneLimits: Limits = { min: 10, max: 10 }
-const phoneLimitsErrorMessage = limitsErrorMessage(phoneLimits)
-
 const subjectLimits: Limits = { min: 12, max: 512 }
-const subjectLimitsErrorMessage = limitsErrorMessage(subjectLimits)
+
+const errorMessages = {
+  email: { message: 'El correo electrónico no es válido.' },
+  phone: { message: 'El número de teléfono no es válido' },
+  nameLimit: createLimitErrorMessage(nameLimits),
+  phoneLimit: createLimitErrorMessage(phoneLimits),
+  subjectLimit: createLimitErrorMessage(subjectLimits)
+}
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 export const emailSchema = z.object({
   email: z.string()
-    .email({ message: 'El correo electrónico no es válido.' })
-    .min(nameLimits.min, { message: nameLimitsErrorMessage })
-    .max(nameLimits.max, { message: nameLimitsErrorMessage })
+    .email(errorMessages.email)
+    .min(nameLimits.min, errorMessages.nameLimit)
+    .max(nameLimits.max, errorMessages.nameLimit)
 })
 
 export const contactEmailSchema = z.object({
   name: z.string()
-    .min(nameLimits.min, { message: nameLimitsErrorMessage })
-    .max(nameLimits.max, { message: nameLimitsErrorMessage }),
+    .min(nameLimits.min, errorMessages.nameLimit)
+    .max(nameLimits.max, errorMessages.nameLimit),
   email: emailSchema.shape.email,
   phone: z.string()
-    .regex(phoneRegExp, { message: 'Número de teléfono inválido' })
-    .min(phoneLimits.min, { message: phoneLimitsErrorMessage })
-    .max(phoneLimits.max, { message: phoneLimitsErrorMessage }),
+    .regex(phoneRegExp, errorMessages.phone)
+    .min(phoneLimits.min, errorMessages.phoneLimit)
+    .max(phoneLimits.max, errorMessages.phoneLimit),
   subject: z.string()
-    .min(subjectLimits.min, { message: subjectLimitsErrorMessage })
-    .max(subjectLimits.max, { message: subjectLimitsErrorMessage })
+    .min(subjectLimits.min, errorMessages.subjectLimit)
+    .max(subjectLimits.max, errorMessages.subjectLimit)
 })
 
 export type Inputs = z.infer<typeof contactEmailSchema>
