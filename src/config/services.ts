@@ -9,7 +9,7 @@ export const services = {
         'Nuestro equipo de consultores experimentados trabaja estrechamente con los líderes empresariales para desarrollar e implementar estrategias efectivas, optimizar operaciones y maximizar el rendimiento organizacional.'
       ],
       image: {
-        src: '/images/service-asesoria-de-alta-dirección-y-empresarial.webp',
+        src: '/images/service-asesoria-de-alta-direccion-y-empresarial.webp',
         alt: 'Experto en a  lta dirección y equipos ejecutivos dando asesoría especializada a un grupo de empresarios en en el escritorio de una sala de juntas',
         width: 768,
         height: 768
