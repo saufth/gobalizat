@@ -28,17 +28,17 @@ export async function POST (req: Request) {
         <p><b>Teléfono:</b> ${input.phone}</p>
         <p><b>Asunto:</b> ${input.subject}</p>
       `
-    }).then(() => (
-      transporter.sendMail({
-        from: `${siteConfig.name}`,
-        to: input.email,
-        subject: `${input.name}, hemos recibido tu mensaje en ${siteConfig.name}`,
-        html: `
+    })
+
+    await transporter.sendMail({
+      from: `${siteConfig.name} ${contactEmail}`,
+      to: input.email,
+      subject: `${input.name}, hemos recibido tu mensaje en ${siteConfig.name}`,
+      html: `
           <h1><b>¡Gracias por contactarnos!</b></h1>
           <p>Un miembro de nuestro equipo se comunicará contigo en breve.</p>
         `
-      })
-    ))
+    })
 
     return new Response(null, { status: 200 })
   } catch (err) {
