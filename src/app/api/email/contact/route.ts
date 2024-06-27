@@ -18,16 +18,6 @@ export async function POST (req: Request) {
     })
 
     await transporter.sendMail({
-      from: `${siteConfig.name}`,
-      to: input.email,
-      subject: `${input.name}, hemos recibido tu mensaje en ${siteConfig.name}`,
-      html: `
-        <h1><b>¡Gracias por contactarnos!</b></h1>
-        <p>Un miembro de nuestro equipo se comunicará contigo en breve.</p>
-      `
-    })
-
-    await transporter.sendMail({
       from: `${siteConfig.name} ${contactEmail}`,
       to: contactEmail,
       subject: 'Nuevo mensaje desde formulario web',
@@ -36,6 +26,16 @@ export async function POST (req: Request) {
         <p><b>Correo electrónico:</b> ${input.email}</p>
         <p><b>Teléfono:</b> ${input.phone}</p>
         <p><b>Asunto:</b> ${input.subject}</p>
+      `
+    })
+
+    await transporter.sendMail({
+      from: `${siteConfig.name}`,
+      to: input.email,
+      subject: `${input.name}, hemos recibido tu mensaje en ${siteConfig.name}`,
+      html: `
+        <h1><b>¡Gracias por contactarnos!</b></h1>
+        <p>Un miembro de nuestro equipo se comunicará contigo en breve.</p>
       `
     })
 
