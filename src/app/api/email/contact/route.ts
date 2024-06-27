@@ -8,12 +8,13 @@ export async function POST (req: Request) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: 'mail.globalizat.com',
+      name: String(process.env.EMAIL_NAMESERVER),
+      host: String(process.env.EMAIL_HOST),
       port: 465,
       secure: true,
       auth: {
         user: contactEmail,
-        pass: String(process.env.EMAIL_CONTACT)
+        pass: String(process.env.EMIAL_CONTACT)
       }
     })
 
