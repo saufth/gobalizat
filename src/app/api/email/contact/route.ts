@@ -1,15 +1,15 @@
 import nodemailer from 'nodemailer'
 import { z } from 'zod'
 import { contactSchema } from '@/lib/validations/email'
-import { siteConfig, contactEmail } from '@/config/site'
+import { siteConfig, contactEmail, domain } from '@/config/site'
 
 export async function POST (req: Request) {
   const input = contactSchema.parse(await req.json())
 
   try {
     const transporter = nodemailer.createTransport({
-      name: String(process.env.EMAIL_NAMESERVER),
-      host: String(process.env.EMAIL_HOST),
+      name: `www.${domain}`,
+      host: `mail.${domain}`,
       port: 465,
       secure: true,
       auth: {
