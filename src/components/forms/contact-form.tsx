@@ -19,7 +19,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { type Inputs, emailSchema } from '@/lib/validations/email'
 
-const recaptchaSitekey = String(process.env.NEXT_PUBLIC_GRECAPTCHA)
+const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA)
 
 export default function ContactForm () {
   const [isPending, startTransition] = React.useTransition()
