@@ -25,7 +25,7 @@ const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2
 export const emailSchema = z.object({
   email: z.string()
     .email({ message: 'El correo electrónico no es válido.' })
-    .max(nameLimits.min, { message: nameLimitsErrorMessage })
+    .min(nameLimits.min, { message: nameLimitsErrorMessage })
     .max(nameLimits.max, { message: nameLimitsErrorMessage })
 })
 
