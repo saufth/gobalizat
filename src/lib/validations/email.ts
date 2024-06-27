@@ -27,18 +27,14 @@ const errorMessages = {
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-export const emailSchema = z.object({
-  email: z.string()
-    .email(errorMessages.email)
-    .min(nameLimits.min, errorMessages.nameLimit)
-    .max(nameLimits.max, errorMessages.nameLimit)
-})
-
-export const contactEmailSchema = z.object({
+export const contactSchema = z.object({
   name: z.string()
     .min(nameLimits.min, errorMessages.nameLimit)
     .max(nameLimits.max, errorMessages.nameLimit),
-  email: emailSchema.shape.email,
+  email: z.string()
+    .email(errorMessages.email)
+    .min(nameLimits.min, errorMessages.nameLimit)
+    .max(nameLimits.max, errorMessages.nameLimit),
   phone: z.string()
     .regex(phoneRegExp, errorMessages.phone)
     .min(phoneLimits.min, errorMessages.phoneLimit)
@@ -48,4 +44,4 @@ export const contactEmailSchema = z.object({
     .max(subjectLimits.max, errorMessages.subjectLimit)
 })
 
-export type Inputs = z.infer<typeof contactEmailSchema>
+export type Inputs = z.infer<typeof contactSchema>

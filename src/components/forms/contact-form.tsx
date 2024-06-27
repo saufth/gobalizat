@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import { useRef, useTransition } from 'react'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { Input } from '@/components/ui/input'
@@ -17,15 +17,15 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { PaperPlaneIcon } from '@radix-ui/react-icons'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { type Inputs, emailSchema } from '@/lib/validations/email'
+import { type Inputs, contactSchema } from '@/lib/validations/email'
 
 const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA)
 
 export default function ContactForm () {
-  const [isPending, startTransition] = React.useTransition()
+  const [isPending, startTransition] = useTransition()
 
   const form = useForm<Inputs>({
-    resolver: zodResolver(emailSchema),
+    resolver: zodResolver(contactSchema),
     defaultValues: {
       name: '',
       email: '',
@@ -34,8 +34,8 @@ export default function ContactForm () {
     }
   })
 
-  const formRef = React.useRef<HTMLFormElement>(null)
-  const recaptchaRef = React.useRef<ReCAPTCHA>(null)
+  const formRef = useRef<HTMLFormElement>(null)
+  const recaptchaRef = useRef<ReCAPTCHA>(null)
 
   const onSubmit = async (data: Inputs) => {
     startTransition(async () => {
@@ -58,10 +58,10 @@ export default function ContactForm () {
             toast.error('Entrada invalida.')
             break
           case 500:
-            toast.error('Algo salió mal. Revisa que los datos que ingresaste o inténtalo de nuevo más tarde.')
+            toast.error('Algo salió mal. Inténtalo de nuevo más tarde.')
             break
           default:
-            toast.error('Algo salió mal. Revisa que los datos que ingresaste o inténtalo de nuevo más tarde.')
+            toast.error('Algo salió mal. Inténtalo de nuevo más tarde.')
         }
         return
       }
