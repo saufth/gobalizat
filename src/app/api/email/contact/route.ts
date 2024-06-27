@@ -13,7 +13,7 @@ export async function POST (req: Request) {
       secure: true,
       auth: {
         user: contactEmail,
-        pass: String(process.env.CONTACT_EMAIL)
+        pass: String(process.env.EMAIL_CONTACT)
       }
     })
 
