@@ -1,6 +1,5 @@
 import { type PropsWithChildren } from 'react'
 import { type Metadata, type Viewport } from 'next'
-import { Analytics } from '@vercel/analytics/react'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import ThemeProvider from '@/components/layouts/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
@@ -71,7 +70,6 @@ export default function RootLayout ({ children }: PropsWithChildren) {
           <TailwindIndicator />
         </ThemeProvider>
         <GoogleSearchScript />
-        <Analytics />
       </body>
     </html>
   )
