@@ -43,7 +43,7 @@ export default function MainNav ({ action, muted }: MainNavProps) {
               rel='noreferrer'
               className={cn('w-fit flex gap-x-2 items-center', muted && 'text-card-foreground')}
             >
-              <span className='font-normal'>{`+${contactItem.phone.code} ${formatPhoneNumber(contactItem.phone.number)}`}</span>
+              <span className='font-normal'>{`${contactItem.phone.code} ${formatPhoneNumber(contactItem.phone.number)}`}</span>
             </Link>
             <Link
               href={contactItem.address.url}
